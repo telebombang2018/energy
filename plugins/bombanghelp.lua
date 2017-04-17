@@ -529,85 +529,104 @@ if matches[1] == "sudo help" or  matches[1] == "راهنما سودو" and is_mo
 if not lang then
 text = [[
 
-اهنما سودو🔛sudo help!🔶
-
-!visudo [username|id|reply]
-Add Sudo
-
-!desudo [username|id|reply]
-Demote Sudo
-
-!sudolist 
-Sudo(s) list
-
-!adminprom [username|id|reply]
-Add admin for bot
-
-!admindem [username|id|reply]
-Demote bot admin
-
-!adminlist 
-Admin(s) list
-
-!leave 
-Leave current group
-
-!autoleave [disable/enable]
-Automatically leaves group
-
-!creategroup [text]
-Create normal group
-
-!createsuper [text]
-Create supergroup
-
-!tosuper 
-Convert to supergroup
-
-!join [id]
-Adds you to the group
-
-!rem [id]
-Remove a group from Database
-
-!import [link]
-Bot joins via link
-
-!setbotname [text]
-Change bot's name
-
-!setbotusername [text]
-Change bot's username
-
-!delbotusername 
-Delete bot's username
-
-!markread [off/on]
-Second mark
-
-!broadcast [text]
-Send message to all added groups
-
-!bc [text] [gpid]
-Send message to a specific group
-
-!del [Reply]
-Remove message Person you are
-
-!clear cache
-Clear All Cache Of .telegram-cli/data
-
-!check
-Stated Expiration Date
-
-!check [GroupID]
-Stated Expiration Date Of Specific Group
-
-!set expire [Number Of Days]
-Set Expire Time For Group
-
-!leave [GroupID]
-Leave Bot From Specific Group
+🔰 راهنما سودو 🔰
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+⚜️ !visudo [username|id|reply]
+✰》اضافه کردن سودو
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+ ⚜️ !desudo [username|id|reply]
+✰》 حذف کردن سودو
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+⚜️ !sudolist 
+✰》 لیست سودو‌های ربات
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+⚜️ !adminprom [username|id|reply]
+✰》 اضافه کردن ادمین به ربات
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+⚜️ !admindem [username|id|reply]
+✰》 حذف فرد از ادمینی ربات
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+⚜️ !adminlist 
+✰》 لیست ادمین ها
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+⚜️ !leave 
+✰》 خارج شدن ربات از گروه
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+⚜️ !autoleave [disable/enable]
+ ✰》 خروج خودکار
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+⚜️ !creategroup [text]
+✰》 ساخت گروه ریلم
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+⚜️ !createsuper [text]
+✰》 ساخت سوپر گروه
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+⚜️ !tosuper 
+✰》 تبدیل به سوپر گروه
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+⚜️ !chats
+✰》 لیست گروه های مدیریتی ربات
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+⚜️ !join [id]
+✰》 جوین شدن توسط ربات
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+⚜️ !rem [id]
+✰》 حذف گروه ازطریق پنل مدیریتی
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+⚜️ !import [link]
+✰》 جوین شدن ربات توسط لینک
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+⚜️ !setbotname [text]
+✰》 تغییر اسم ربات
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+⚜️ !setbotusername [text]
+✰》 تغییر یوزرنیم ربات
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+⚜️ !delbotusername 
+✰》 پاک کردن یوزرنیم ربات
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+⚜️ !markread [off/on]
+✰》 تیک دوم
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+⚜️ !broadcast [text]
+✰》 فرستادن پیام به تمام گروه ها
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+⚜️ !bc [text] [gpid]
+✰》 ارسال پیام مورد نظر به گروه خاص
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+⚜️ !sendfile [cd] [file]
+✰》 ارسال فایل موردنظر از پوشه خاص
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+⚜️ !sendplug [plug]
+✰》 ارسال پلاگ مورد نظر
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+⚜️ !save [plugin name] [reply]
+✰》 ذخیره کردن پلاگین
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+⚜️ !savefile [address/filename] [reply]
+✰》 ذخیره کردن فایل در پوشه مورد نظر
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+⚜️ !clear cache
+✰》 پاک کردن کش مسیر .telegram-cli/data
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+⚜️ !check
+✰》 اعلام تاریخ انقضای گروه
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+⚜️ !check [GroupID]
+✰》 اعلام تاریخ انقضای گروه مورد نظر
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+⚜️ !charge [GroupID] [Number Of Days]
+✰》 تنظیم تاریخ انقضای گروه مورد نظر
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+⚜️ !charge [Number Of Days]
+✰》 تنظیم تاریخ انقضای گروه
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+⚜️ !jointo [GroupID]
+✰》 دعوت شدن شما توسط ربات به گروه مورد نظر
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+⚜️ !leave [GroupID]
+✰》 خارج شدن ربات از گروه مورد نظر
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
 🌐 @bombangteam 🌐 ;)]]
 tdcli.sendMessage(msg.chat_id_, 0, 1, text, 1, 'md')
 else

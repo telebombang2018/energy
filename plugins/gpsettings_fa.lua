@@ -2479,7 +2479,7 @@ return lock_webpage(msg, data, target)
 end
 end
 
-if matches[1] == "غیرفعال کردن" and is_mod(msg) then
+if matches[1] == "باز کردن" and is_mod(msg) then
 local target = msg.chat_id_
 if matches[2] == "لینک" then
 return unlock_link(msg, data, target)
@@ -2564,7 +2564,7 @@ return lock_game(msg ,data, target)
 end
 end
 
-if matches[1] == "غیرفعال کردن" and is_mod(msg) then
+if matches[1] == "باز کردن" and is_mod(msg) then
 local target = msg.chat_id_
 if matches[2] == "همه" then
 return unlock_all(msg, data, target)
@@ -2942,11 +2942,11 @@ patterns ={
 "^(لیست ادمین ها)$",
 "^(لیست مدیران)$",
 "^(قفل) (.*)$",
-"^(غیرفعال کردن) (.*)$",
+"^(باز کردن) (.*)$",
 "^(تنظیمات)$",
 "^(لیست قفل)$",
 "^(قفل) (.*)$",
-"^(غیرفعال کردن) (.*)$",
+"^(باز کردن) (.*)$",
 "^(لینک)$",
 "^(تنظیم لینک)$",
 "^(قوانین)$",

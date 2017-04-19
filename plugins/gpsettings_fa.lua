@@ -603,7 +603,7 @@ if lock_link == "yes" then
 if not lang then
  return "🔐*Link* _Posting Is Already Locked_🔐"
 elseif lang then
- return "🔐ارسال لینک در گروه قفل است🔐"
+ return "🔐قفل لینک فعال بود🔐"
 end
 else
 data[tostring(target)]["settings"]["lock_link"] = "yes"
@@ -611,7 +611,7 @@ save_data(_config.moderation.data, data)
 if not lang then
  return "🔐*Link* _Posting Has Been Locked_🔐"
 else
- return "🔐ارسال لینک در گروه قفل شد🔐"
+ return "🔐قفل لینک فعال شد🔐"
 end
 end
 end
@@ -632,14 +632,14 @@ local lock_link = data[tostring(target)]["settings"]["lock_link"]
 if not lang then
 return "🔓*Link* _Posting Is Not Locked_🔓" 
 elseif lang then
-return "🔓ارسال لینک در گروه باز است🔓"
+return "🔓قفل لینک باز بود🔓"
 end
 else 
 data[tostring(target)]["settings"]["lock_link"] = "no" save_data(_config.moderation.data, data) 
 if not lang then
 return "🔓*Link* _Posting Has Been Unlocked_🔓" 
 else
-return "🔓ارسال لینک در گروه باز شد🔓"
+return "🔓قفل لینک باز شد🔓"
 end
 end
 end
@@ -663,7 +663,7 @@ if lock_fosh == "yes" then
 if not lang then
  return "🔐*Fosh* _Posting Is Already Locked_🔐"
 elseif lang then
- return "🔐قفل فحش فعال است🔐"
+ return "🔐فعال فحش فعال بود🔐"
 end
 else
 data[tostring(target)]["settings"]["lock_fosh"] = "yes"
@@ -671,7 +671,7 @@ save_data(_config.moderation.data, data)
 if not lang then
  return "🔐*Fosh* _ Has Been Locked_🔐"
 else
- return "🔐قفل فحش فعال شد🔐"
+ return "🔐فعال فحش فعال شد🔐"
 end
 end
 end
@@ -692,14 +692,14 @@ local lock_fosh = data[tostring(target)]["settings"]["lock_fosh"]
 if not lang then
 return "🔓*Fosh* _Is Not Locked_🔓" 
 elseif lang then
-return "🔓قفل فحش باز است🔓"
+return "🔓فعال فحش باز بود🔓"
 end
 else 
 data[tostring(target)]["settings"]["lock_fosh"] = "no" save_data(_config.moderation.data, data) 
 if not lang then
 return "🔓*Fosh* _Has Been Unlocked_🔓" 
 else
-return "🔓قفل فحش باز شد🔓"
+return "🔓فعال فحش باز شد🔓"
 end
 end
 end
@@ -721,7 +721,7 @@ if lock_tag == "yes" then
 if not lang then
  return "🔐*Tag* _Posting Is Already Locked_🔐"
 elseif lang then
- return "🔐ارسال تگ در گروه قفل است🔐"
+ return "🔐قفل تگ فعال بود🔐"
 end
 else
  data[tostring(target)]["settings"]["lock_tag"] = "yes"
@@ -729,7 +729,7 @@ save_data(_config.moderation.data, data)
 if not lang then
  return "🔐*Tag* _Posting Has Been Locked_🔐"
 else
- return "🔐ارسال تگ در گروه قفل شد🔐"
+ return "🔐قفل تگ فعال شد🔐"
 end
 end
 end
@@ -750,14 +750,14 @@ local lock_tag = data[tostring(target)]["settings"]["lock_tag"]
 if not lang then
 return "🔓*Tag* _Posting Is Not Locked_🔓" 
 elseif lang then
-return "🔓ارسال تگ در گروه باز است🔓"
+return "🔓قفل تگ باز بود🔓"
 end
 else 
 data[tostring(target)]["settings"]["lock_tag"] = "no" save_data(_config.moderation.data, data) 
 if not lang then
 return "🔓*Tag* _Posting Has Been Unlocked_🔓" 
 else
-return "🔓ارسال تگ در گروه باز شد🔓"
+return "🔓قفل تگ باز شد🔓"
 end
 end
 end
@@ -779,7 +779,7 @@ if lock_mention == "yes" then
 if not lang then
  return "🔐*Mention* _Posting Is Already Locked_🔐"
 elseif lang then
- return "🔐ارسال فراخوانی افراد  قفل است🔐"
+ return "🔐قفل فراخوانی افراد  فعال بود🔐"
 end
 else
  data[tostring(target)]["settings"]["lock_mention"] = "yes"
@@ -787,7 +787,7 @@ save_data(_config.moderation.data, data)
 if not lang then 
  return "🔐*Mention* _Posting Has Been Locked_🔐"
 else 
- return "🔐ارسال فراخوانی افراد در گروه قفل شد🔐"
+ return "🔐قفل فراخوانی افراد فعال شد🔐"
 end
 end
 end
@@ -808,14 +808,14 @@ local lock_mention = data[tostring(target)]["settings"]["lock_mention"]
 if not lang then
 return "🔓*Mention* _Posting Is Not Locked_🔓" 
 elseif lang then
-return "🔓ارسال فراخوانی افراد در گروه باز است🔓"
+return "🔓قفل فراخوانی افراد باز بود🔓"
 end
 else 
 data[tostring(target)]["settings"]["lock_mention"] = "no" save_data(_config.moderation.data, data) 
 if not lang then
 return "🔓*Mention* _Posting Has Been Unlocked_🔓" 
 else
-return "🔓ارسال فراخوانی افراد در گروه باز شد🔓"
+return "🔓قفل فراخوانی افراد باز شد🔓"
 end
 end
 end
@@ -837,7 +837,7 @@ if lock_arabic == "yes" then
 if not lang then
  return "🔐*Arabic/Persian* _Posting Is Already Locked_🔐"
 elseif lang then
- return "🔐ارسال کلمات عربی/فارسی در گروه قفل است🔐"
+ return "🔐قفل کلمات عربی/فارسی فعال بود🔐"
 end
 else
 data[tostring(target)]["settings"]["lock_arabic"] = "yes"
@@ -845,7 +845,7 @@ save_data(_config.moderation.data, data)
 if not lang then
  return "🔐*Arabic/Persian* _Posting Has Been Locked_🔐"
 else
- return "🔐ارسال کلمات عربی/فارسی در گروه قفل شد🔐"
+ return "🔐قفل کلمات عربی/فارسی فعال شد🔐"
 end
 end
 end
@@ -866,14 +866,14 @@ local lock_arabic = data[tostring(target)]["settings"]["lock_arabic"]
 if not lang then
 return "🔓*Arabic/Persian* _Posting Is Not Locked_🔓" 
 elseif lang then
-return "🔓ارسال کلمات عربی/فارسی در گروه باز است🔓"
+return "🔓قفل کلمات عربی/فارسی باز بود🔓"
 end
 else 
 data[tostring(target)]["settings"]["lock_arabic"] = "no" save_data(_config.moderation.data, data) 
 if not lang then
 return "🔓*Arabic/Persian* _Posting Has Been Unlocked_🔓" 
 else
-return "🔓ارسال کلمات عربی/فارسی در گروه باز شد🔓"
+return "🔓قفل کلمات عربی/فارسی باز شد🔓"
 end
 end
 end
@@ -895,7 +895,7 @@ if lock_edit == "yes" then
 if not lang then
  return "🔐*Editing* _Is Already Locked_🔐"
 elseif lang then
- return "🔐ویرایش پیام در گروه قفل است🔐"
+ return "🔐ویرایش پیام فعال بود🔐"
 end
 else
  data[tostring(target)]["settings"]["lock_edit"] = "yes"
@@ -903,7 +903,7 @@ save_data(_config.moderation.data, data)
 if not lang then
  return "🔐*Editing* _Has Been Locked_🔐"
 else
- return "🔐ویرایش پیام در گروه قفل شد🔐"
+ return "🔐ویرایش پیام فعال شد🔐"
 end
 end
 end
@@ -924,14 +924,14 @@ local lock_edit = data[tostring(target)]["settings"]["lock_edit"]
 if not lang then
 return "🔓*Editing* _Is Not Locked_🔓" 
 elseif lang then
-return "🔓ویرایش پیام در گروه باز است🔓"
+return "🔓ویرایش پیام باز بود🔓"
 end
 else 
 data[tostring(target)]["settings"]["lock_edit"] = "no" save_data(_config.moderation.data, data) 
 if not lang then
 return "🔓*Editing* _Has Been Unlocked_🔓" 
 else
-return "🔓ویرایش پیام در گروه باز شد🔓"
+return "🔓ویرایش پیام باز شد🔓"
 end
 end
 end
@@ -953,7 +953,7 @@ if lock_spam == "yes" then
 if not lang then
  return "🔐*Spam* _Is Already Locked_🔐"
 elseif lang then
- return "🔐ارسال هرزنامه در گروه قفل است🔐"
+ return "🔐قفل هرزنامه فعال بود🔐"
 end
 else
  data[tostring(target)]["settings"]["lock_spam"] = "yes"
@@ -961,7 +961,7 @@ save_data(_config.moderation.data, data)
 if not lang then
  return "🔐*Spam* _Has Been Locked_🔐"
 else
- return "🔐ارسال هرزنامه در گروه قفل شد🔐"
+ return "🔐قفل هرزنامه فعال شد🔐"
 end
 end
 end
@@ -982,14 +982,14 @@ local lock_spam = data[tostring(target)]["settings"]["lock_spam"]
 if not lang then
 return "🔓*Spam* _Posting Is Not Locked_🔓" 
 elseif lang then
- return "🔓ارسال هرزنامه در گروه باز است🔓"
+ return "🔓قفل هرزنامه باز بود🔓"
 end
 else 
 data[tostring(target)]["settings"]["lock_spam"] = "no" save_data(_config.moderation.data, data)
 if not lang then 
 return "🔓*Spam* _Posting Has Been Unlocked_🔓" 
 else
- return "🔓ارسال هرزنامه در گروه باز شد🔓"
+ return "🔓قفل هرزنامه باز شد🔓"
 end
 end
 end
@@ -1011,7 +1011,7 @@ if lock_flood == "yes" then
 if not lang then
  return "🔐*Flooding* _Is Already Locked_🔐"
 elseif lang then
- return "🔐ارسال پیام رگبار در گروه قفل است🔐"
+ return "🔐قفل پیام رگبار فعال بود🔐"
 end
 else
  data[tostring(target)]["settings"]["flood"] = "yes"
@@ -1019,7 +1019,7 @@ save_data(_config.moderation.data, data)
 if not lang then
  return "🔐*Flooding* _Has Been Locked_🔐"
 else
- return "🔐ارسال پیام رگبار در گروه قفل شد🔐"
+ return "🔐قفل پیام رگبار فعال شد🔐"
 end
 end
 end
@@ -1040,14 +1040,14 @@ local lock_flood = data[tostring(target)]["settings"]["flood"]
 if not lang then
 return "🔓*Flooding* _Is Not Locked_🔓" 
 elseif lang then
-return "🔓ارسال پیام رگبار در گروه باز است🔓"
+return "🔓قفل پیام رگبار باز بود🔓"
 end
 else 
 data[tostring(target)]["settings"]["flood"] = "no" save_data(_config.moderation.data, data) 
 if not lang then
 return "🔓*Flooding* _Has Been Unlocked_🔓" 
 else
-return "🔓ارسال پیام رگبار در گروه باز شد🔓"
+return "🔓قفل پیام رگبار باز شد🔓"
 end
 end
 end
@@ -1069,7 +1069,7 @@ if lock_bots == "yes" then
 if not lang then
  return "🔐*Bots* _Protection Is Already Enabled_🔐"
 elseif lang then
- return "🔐محافظت از گروه در برابر ربات ها  فعال است🔐"
+ return "🔐محافظت از گروه در برابر ربات ها  فعال بود🔐"
 end
 else
  data[tostring(target)]["settings"]["lock_bots"] = "yes"
@@ -1098,7 +1098,7 @@ local lock_bots = data[tostring(target)]["settings"]["lock_bots"]
 if not lang then
 return "🔓*Bots* _Protection Is Not Enabled_🔓" 
 elseif lang then
-return "🔓محافظت از گروه در برابر ربات ها باز است🔓"
+return "🔓محافظت از گروه در برابر ربات ها باز بود🔓"
 end
 else 
 data[tostring(target)]["settings"]["lock_bots"] = "no" save_data(_config.moderation.data, data) 
@@ -1127,7 +1127,7 @@ if lock_markdown == "yes" then
 if not lang then 
  return "🔐*Markdown* _Posting Is Already Locked_🔐"
 elseif lang then
- return "🔐ارسال پیام های دارای فونت در گروه قفل است🔐"
+ return "🔐قفل پیام های دارای فونت فعال بود🔐"
 end
 else
  data[tostring(target)]["settings"]["lock_markdown"] = "yes"
@@ -1135,7 +1135,7 @@ save_data(_config.moderation.data, data)
 if not lang then
  return "🔐*Markdown* _Posting Has Been Locked_🔐"
 else
- return "🔐ارسال پیام های دارای فونت در گروه قفل شد🔐"
+ return "🔐قفل پیام های دارای فونت فعال شد🔐"
 end
 end
 end
@@ -1156,14 +1156,14 @@ local lock_markdown = data[tostring(target)]["settings"]["lock_markdown"]
 if not lang then
 return "🔓*Markdown* _Posting Is Not Locked_🔓"
 elseif lang then
-return "🔓ارسال پیام های دارای فونت در گروه باز است🔓"
+return "🔓قفل پیام های دارای فونت باز بود🔓"
 end
 else 
 data[tostring(target)]["settings"]["lock_markdown"] = "no" save_data(_config.moderation.data, data) 
 if not lang then
 return "🔓*Markdown* _Posting Has Been Unlocked_🔓"
 else
-return "🔓ارسال پیام های دارای فونت در گروه باز شد🔓"
+return "🔓قفل پیام های دارای فونت باز شد🔓"
 end
 end
 end
@@ -1185,7 +1185,7 @@ if lock_webpage == "yes" then
 if not lang then
  return "🔐*Webpage* _Is Already Locked_🔐"
 elseif lang then
- return "🔐ارسال صفحات وب در گروه قفل است🔐"
+ return "🔐قفل صفحات وب فعال بود🔐"
 end
 else
  data[tostring(target)]["settings"]["lock_webpage"] = "yes"
@@ -1193,7 +1193,7 @@ save_data(_config.moderation.data, data)
 if not lang then
  return "🔐*Webpage* _Has Been Locked_🔐"
 else
- return "🔐ارسال صفحات وب در گروه قفل شد🔐"
+ return "🔐قفل صفحات وب فعال شد🔐"
 end
 end
 end
@@ -1205,7 +1205,7 @@ local lang = redis:get(hash)
 if not lang then
 return "_You're Not_ *Moderator*"
 else
-return "شما مدیر گروه نیستید"
+return "✖️شما مدیر گروه نیستید✖️"
 end 
 end
 
@@ -1214,7 +1214,7 @@ local lock_webpage = data[tostring(target)]["settings"]["lock_webpage"]
 if not lang then
 return "🔓*Webpage* _Is Not Locked_🔓" 
 elseif lang then
-return "🔓ارسال صفحات وب در گروه باز است🔓"
+return "🔓قفل صفحات وب غیرفعال بود🔓"
 end
 else 
 data[tostring(target)]["settings"]["lock_webpage"] = "no"
@@ -1222,7 +1222,7 @@ save_data(_config.moderation.data, data)
 if not lang then
 return "🔓*Webpage* _Has Been Unlocked_🔓" 
 else
-return "🔓ارسال صفحات وب در گروه باز شد🔓"
+return "🔓قفل صفحات وب غیرفعال شد🔓"
 end
 end
 end
@@ -1234,7 +1234,7 @@ if not is_mod(msg) then
 if not lang then
  	return "_You're Not_ *Moderator*"
 else
-  return "شما مدیر گروه نیستید"
+  return "✖️شما مدیر گروه نیستید✖️"
 end
 end
 local data = load_data(_config.moderation.data)
@@ -1419,10 +1419,10 @@ local expiretime = redis:hget('expiretime', msg.chat_id_)
 	
 if not lang then
 local settings = data[tostring(target)]["settings"] 
- text = "⚙️*Group Settings*⚙️\n*__________________*\n● 》_Lock edit ➢_ *"..settings.lock_edit.."*\n● 》_Lock links ➢_ *"..settings.lock_link.."*\n● 》_Lock fosh ➢_ *"..settings.lock_fosh.."*\n● 》_Lock tags ➢_ *"..settings.lock_tag.."*\n● 》_Lock Persian ➢_ *"..settings.lock_arabic.."*\n● 》_Lock flood ➢_ *"..settings.flood.."*\n● 》_Lock spam ➢_ *"..settings.lock_spam.."*\n● 》_Lock mention ➢_ *"..settings.lock_mention.."*\n● 》_Lock webpage ➢_ *"..settings.lock_webpage.."*\n● 》_welcome ➢_ *"..settings.welcome.."*\n● 》_Lock markdown ➢_ *"..settings.lock_markdown.."*\n● 》_Lock Bots ➢_ *"..settings.lock_bots.."*\n● 》_Lock gif ➢_ *"..settings.lock_gif.."*\n● 》_Lock text ➢_ *"..settings.lock_text.."*\n● 》_Lock inline ➢_ *"..settings.lock_inline.."*\n● 》_Lock game ➢_ *"..settings.lock_game.."*\n● 》_Lock photo ➢_ *"..settings.lock_photo.."*\n● 》_Lock video ➢_ *"..settings.lock_video.."*\n● 》_Lock audio ➢_ *"..settings.lock_audio.."*\n● 》_Lock voice ➢_ *"..settings.lock_voice.."*\n● 》_Lock sticker ➢_ *"..settings.lock_sticker.."*\n● 》_Lock contact ➢_ *"..settings.lock_contact.."*\n● 》_Lock forward ➢_ *"..settings.lock_forward.."*\n● 》_Lock location ➢_ *"..settings.lock_location.."*\n● 》_Lock document ➢_ *"..settings.lock_document.."*\n● 》_Lock TgService ➢_ *"..settings.lock_tgservice.."*\n● 》_Lock all : _ *"..settings.lock_all.."*\n*__________________*\n● 》_Set Flood ➢_ *"..NUM_MSG_MAX.."*\n● 》_Welcome ➢_ *"..settings.welcome.."*\n● 》_EXPIRE ➢_ *"..expire.."*\n*__________________*\n Enable✓ ➰ Disable✘ \n*__________________*\n*Language* : *EN*"
+ text = "⚙️*Group Settings*⚙️\n*__________________*\n● 》_Lock edit ➢_ *"..settings.lock_edit.."*\n● 》_Lock links ➢_ *"..settings.lock_link.."*\n● 》_Lock fosh ➢_ *"..settings.lock_fosh.."*\n● 》_Lock tags ➢_ *"..settings.lock_tag.."*\n● 》_Lock Persian ➢_ *"..settings.lock_arabic.."*\n● 》_Lock flood ➢_ *"..settings.flood.."*\n● 》_Lock spam ➢_ *"..settings.lock_spam.."*\n● 》_Lock mention ➢_ *"..settings.lock_mention.."*\n● 》_Lock webpage ➢_ *"..settings.lock_webpage.."*\n● 》_welcome ➢_ *"..settings.welcome.."*\n● 》_Lock markdown ➢_ *"..settings.lock_markdown.."*\n● 》_Lock Bots ➢_ *"..settings.lock_bots.."*\n● 》_Lock gif ➢_ *"..settings.lock_gif.."*\n● 》_Lock text ➢_ *"..settings.lock_text.."*\n● 》_Lock inline ➢_ *"..settings.lock_inline.."*\n● 》_Lock game ➢_ *"..settings.lock_game.."*\n● 》_Lock photo ➢_ *"..settings.lock_photo.."*\n● 》_Lock video ➢_ *"..settings.lock_video.."*\n● 》_Lock audio ➢_ *"..settings.lock_audio.."*\n● 》_Lock voice ➢_ *"..settings.lock_voice.."*\n● 》_Lock sticker ➢_ *"..settings.lock_sticker.."*\n● 》_Lock contact ➢_ *"..settings.lock_contact.."*\n● 》_Lock forward ➢_ *"..settings.lock_forward.."*\n● 》_Lock location ➢_ *"..settings.lock_location.."*\n● 》_Lock document ➢_ *"..settings.lock_document.."*\n● 》_Lock TgService ➢_ *"..settings.lock_tgservice.."*\n● 》_Lock all : _ *"..settings.lock_all.."*\n*__________________*\n● 》_Set Flood ➢_ *"..NUM_MSG_MAX.."*\n● 》_Welcome ➢_ *"..settings.welcome.."*\n● 》_EXPIRE ➢_ *"..expire.."*\n*__________________*\n Enable✓ ➰ Disable✘ \n*__________________*\n support: @bombangteam \n*__________________*\n*Language* : *EN*"
 else
 local settings = data[tostring(target)]["settings"] 
- text = "⚙️*تنظیمات سوپرگروه*⚙️\n*__________________*\n● 》_قفل ویرایش ↫_ *"..settings.lock_edit.."*\n● 》_قفل لینک ↫_ *"..settings.lock_link.."*\n● 》_قفل فحش ↫_ *"..settings.lock_fosh.."*\n● 》_قفل تگ ↫_ *"..settings.lock_tag.."*\n● 》_قفل فارسی ↫_ *"..settings.lock_arabic.."*\n● 》_قفل فلود ↫_ *"..settings.flood.."*\n● 》_قفل اسپم ↫_ *"..settings.lock_spam.."*\n● 》_قفل فراخوانی ↫_ *"..settings.lock_mention.."*\n● 》_قفل وبسایت ↫_ *"..settings.lock_webpage.."*\n● 》_قفل فونت ↫_ *"..settings.lock_markdown.."*\n● 》_قفل ربات ↫_ *"..settings.lock_bots.."*\n● 》_قفل گیف ↫_ *"..settings.lock_gif.."*\n● 》_قفل متن ↫_ *"..settings.lock_text.."*\n● 》_قفل اینلاین ↫_ *"..settings.lock_inline.."*\n● 》_قفل بازی ↫_ *"..settings.lock_game.."*\n● 》_قفل عکس ↫_ *"..settings.lock_photo.."*\n● 》_قفل فیلم ↫_ *"..settings.lock_video.."*\n● 》_قفل موزیک ↫_ *"..settings.lock_audio.."*\n● 》_قفل صدا ↫_ *"..settings.lock_voice.."*\n● 》_قفل استیکر ↫_ *"..settings.lock_sticker.."*\n● 》_قفل اطلاعات تماس ↫_ *"..settings.lock_contact.."*\n● 》_قفل فوروارد ↫_ *"..settings.lock_forward.."*\n● 》_قفل موقعیت ↫_ *"..settings.lock_location.."*\n● 》_قفل فایل ↫_ *"..settings.lock_document.."*\n● 》_قفل خدمات تلگرام ↫_ *"..settings.lock_tgservice.."*\n● 》_تنظیم فلود(رگبار) ↫_ *"..NUM_MSG_MAX.."*\n● 》_قفل همه ↫ _ *"..settings.lock_all.."*\n*__________________*\n● 》_تنظیم فلود(رگبار) ↫_ *"..NUM_MSG_MAX.."*\n● 》_خوشآمد گویی ↫_ *"..settings.welcome.."*\n● 》_شارژ گروه ↫_ *"..expire.."*\n*__________________*\n فعال✓ ➰ غیرفعال✘ \n*__________________*\n*زبان ربات* ↫ *فارسی*"
+ text = "⚙️*تنظیمات سوپرگروه*⚙️\n*__________________*\n● 》_قفل ویرایش ↫_ *"..settings.lock_edit.."*\n● 》_قفل لینک ↫_ *"..settings.lock_link.."*\n● 》_قفل فحش ↫_ *"..settings.lock_fosh.."*\n● 》_قفل تگ ↫_ *"..settings.lock_tag.."*\n● 》_قفل فارسی ↫_ *"..settings.lock_arabic.."*\n● 》_قفل فلود ↫_ *"..settings.flood.."*\n● 》_قفل اسپم ↫_ *"..settings.lock_spam.."*\n● 》_قفل فراخوانی ↫_ *"..settings.lock_mention.."*\n● 》_قفل وبسایت ↫_ *"..settings.lock_webpage.."*\n● 》_قفل فونت ↫_ *"..settings.lock_markdown.."*\n● 》_قفل ربات ↫_ *"..settings.lock_bots.."*\n● 》_قفل گیف ↫_ *"..settings.lock_gif.."*\n● 》_قفل متن ↫_ *"..settings.lock_text.."*\n● 》_قفل اینلاین ↫_ *"..settings.lock_inline.."*\n● 》_قفل بازی ↫_ *"..settings.lock_game.."*\n● 》_قفل عکس ↫_ *"..settings.lock_photo.."*\n● 》_قفل فیلم ↫_ *"..settings.lock_video.."*\n● 》_قفل موزیک ↫_ *"..settings.lock_audio.."*\n● 》_قفل صدا ↫_ *"..settings.lock_voice.."*\n● 》_قفل استیکر ↫_ *"..settings.lock_sticker.."*\n● 》_قفل اطلاعات تماس ↫_ *"..settings.lock_contact.."*\n● 》_قفل فوروارد ↫_ *"..settings.lock_forward.."*\n● 》_قفل موقعیت ↫_ *"..settings.lock_location.."*\n● 》_قفل فایل ↫_ *"..settings.lock_document.."*\n● 》_قفل خدمات تلگرام ↫_ *"..settings.lock_tgservice.."*\n● 》_تنظیم فلود(رگبار) ↫_ *"..NUM_MSG_MAX.."*\n● 》_قفل همه ↫ _ *"..settings.lock_all.."*\n*__________________*\n● 》_تنظیم فلود(رگبار) ↫_ *"..NUM_MSG_MAX.."*\n● 》_خوشآمد گویی ↫_ *"..settings.welcome.."*\n● 》_شارژ گروه ↫_ *"..expire.."*\n*__________________*\n فعال✓ ➰ غیرفعال✘ \n*__________________*\n پشتیبان: @bombangteam \n*__________________*\n*زبان ربات* ↫ *فارسی*"
 end
 if not lang then
 text = string.gsub(text, "yes", "✓")
@@ -1442,7 +1442,7 @@ if not is_mod(msg) then
 if not lang then
 return "_You're Not_ *Moderator*" 
 else
-return "شما مدیر گروه نیستید"
+return "✖️شما مدیر گروه نیستید✖️"
 end
 end
 
@@ -1471,7 +1471,7 @@ if not is_mod(msg) then
 if not lang then
 return "_You're Not_ *Moderator*" 
 else
-return "شما مدیر گروه نیستید"
+return "✖️شما مدیر گروه نیستید✖️"
 end
 end
 
@@ -1480,7 +1480,7 @@ if lock_all == "no" then
 if not lang then
 return "🔓*lock All* _Is Already Disabled_🔓" 
 elseif lang then
-return "🔓قفل همه باز است🔓"
+return "🔓قفل همه غیرفعال است🔓"
 end
 else 
 data[tostring(target)]["settings"]["lock_all"] = "no"
@@ -1488,7 +1488,7 @@ data[tostring(target)]["settings"]["lock_all"] = "no"
 if not lang then
 return "🔓*lock All* _Has Been Disabled_🔓" 
 else
-return "🔓قفل همه باز شد🔓"
+return "🔓قفل همه غیرفعال شد🔓"
 end 
 end
 end
@@ -1501,7 +1501,7 @@ if not is_mod(msg) then
 if not lang then
  return "_You're Not_ *Moderator*"
 else
- return "شما مدیر گروه نیستید"
+ return "✖️شما مدیر گروه نیستید✖️"
 end
 end
 
@@ -1530,7 +1530,7 @@ local lang = redis:get(hash)
 if not lang then
 return "_You're Not_ *Moderator*"
 else
-return "شما مدیر گروه نیستید"
+return "✖️شما مدیر گروه نیستید✖️"
 end
 end 
 
@@ -1539,7 +1539,7 @@ local lock_gif = data[tostring(target)]["settings"]["lock_gif"]
 if not lang then
 return "🔐*lock Gif* _Is Already Disabled_🔐" 
 elseif lang then
-return "🔐قفل تصاویر متحرک باز بود🔐"
+return "🔐قفل تصاویر متحرک غیرفعال بود🔐"
 end
 else 
 data[tostring(target)]["settings"]["lock_gif"] = "no"
@@ -1547,7 +1547,7 @@ data[tostring(target)]["settings"]["lock_gif"] = "no"
 if not lang then
 return "🔐*lock Gif* _Has Been Disabled_🔐" 
 else
-return "🔐قفل تصاویر متحرک باز شد🔐"
+return "🔐قفل تصاویر متحرک غیرفعال شد🔐"
 end
 end
 end
@@ -1559,7 +1559,7 @@ if not is_mod(msg) then
 if not lang then
  return "_You're Not_ *Moderator*"
 else
- return "شما مدیر گروه نیستید"
+ return "✖️شما مدیر گروه نیستید✖️"
 end
 end
 
@@ -1588,7 +1588,7 @@ local lang = redis:get(hash)
 if not lang then
 return "_You're Not_ *Moderator*"
 else
-return "شما مدیر گروه نیستید"
+return "✖️شما مدیر گروه نیستید✖️"
 end 
 end
 
@@ -1597,7 +1597,7 @@ local lock_game = data[tostring(target)]["settings"]["lock_game"]
 if not lang then
 return "🔓*lock Game* _Is Already Disabled_🔓" 
 elseif lang then
-return "🔓قفل بازی های تحت وب باز است🔓"
+return "🔓قفل بازی های تحت وب غیرفعال است🔓"
 end
 else 
 data[tostring(target)]["settings"]["lock_game"] = "no"
@@ -1605,7 +1605,7 @@ data[tostring(target)]["settings"]["lock_game"] = "no"
 if not lang then 
 return "🔓*lock Game* _Has Been Disabled_🔓" 
 else
-return "🔓قفل بازی های تحت وب باز شد🔓"
+return "🔓قفل بازی های تحت وب غیرفعال شد🔓"
 end
 end
 end
@@ -1617,7 +1617,7 @@ if not is_mod(msg) then
 if not lang then
  return "_You're Not_ *Moderator*"
 else
- return "شما مدیر گروه نیستید"
+ return "✖️شما مدیر گروه نیستید✖️"
 end
 end
 
@@ -1646,7 +1646,7 @@ local lang = redis:get(hash)
 if not lang then
 return "_You're Not_ *Moderator*"
 else
-return "شما مدیر گروه نیستید"
+return "✖️شما مدیر گروه نیستید✖️"
 end
 end 
 
@@ -1655,7 +1655,7 @@ local lock_inline = data[tostring(target)]["settings"]["lock_inline"]
 if not lang then
 return "🔓*lock Inline* _Is Already Disabled_🔓" 
 elseif lang then
-return "🔓قفل کیبورد شیشه ای باز است🔓"
+return "🔓قفل کیبورد شیشه ای غیرفعال است🔓"
 end
 else 
 data[tostring(target)]["settings"]["lock_inline"] = "no"
@@ -1663,7 +1663,7 @@ data[tostring(target)]["settings"]["lock_inline"] = "no"
 if not lang then
 return "🔓*lock Inline* _Has Been Disabled_🔓" 
 else
-return "🔓قفل کیبورد شیشه ای باز شد🔓"
+return "🔓قفل کیبورد شیشه ای غیرفعال شد🔓"
 end
 end
 end
@@ -1675,7 +1675,7 @@ if not is_mod(msg) then
 if not lang then
  return "_You're Not_ *Moderator*"
 else
- return "شما مدیر گروه نیستید"
+ return "✖️شما مدیر گروه نیستید✖️"
 end
 end
 
@@ -1704,7 +1704,7 @@ local lang = redis:get(hash)
 if not lang then
 return "_You're Not_ *Moderator*"
 else
-return "شما مدیر گروه نیستید"
+return "✖️شما مدیر گروه نیستید✖️"
 end 
 end
 
@@ -1713,7 +1713,7 @@ local lock_text = data[tostring(target)]["settings"]["lock_text"]
 if not lang then
 return "🔓*lock Text* _Is Already Disabled_🔓"
 elseif lang then
-return "🔓قفل متن باز است🔓" 
+return "🔓قفل متن غیرفعال است🔓" 
 end
 else 
 data[tostring(target)]["settings"]["lock_text"] = "no"
@@ -1721,7 +1721,7 @@ data[tostring(target)]["settings"]["lock_text"] = "no"
 if not lang then
 return "🔓*lock Text* _Has Been Disabled_🔓" 
 else
-return "🔓قفل متن باز شد🔓"
+return "🔓قفل متن غیرفعال شد🔓"
 end
 end
 end
@@ -1762,7 +1762,7 @@ local lang = redis:get(hash)
 if not lang then
 return "_You're Not_ *Moderator*"
 else
-return "شما مدیر گروه نیستید"
+return "✖️شما مدیر گروه نیستید✖️"
 end
 end
  
@@ -1771,7 +1771,7 @@ local lock_photo = data[tostring(target)]["settings"]["lock_photo"]
 if not lang then
 return "🔓*lock Photo* _Is Already Disabled_🔓" 
 elseif lang then
-return "🔓قفل عکس باز است🔓"
+return "🔓قفل عکس غیرفعال است🔓"
 end
 else 
 data[tostring(target)]["settings"]["lock_photo"] = "no"
@@ -1779,7 +1779,7 @@ data[tostring(target)]["settings"]["lock_photo"] = "no"
 if not lang then
 return "🔓*lock Photo* _Has Been Disabled_🔓" 
 else
-return "🔓قفل عکس باز شد🔓"
+return "🔓قفل عکس غیرفعال شد🔓"
 end
 end
 end
@@ -1791,7 +1791,7 @@ if not is_mod(msg) then
 if not lang then
  return "_You're Not_ *Moderator*"
 else
- return "شما مدیر گروه نیستید"
+ return "✖️شما مدیر گروه نیستید✖️"
 end
 end
 
@@ -1820,7 +1820,7 @@ local lang = redis:get(hash)
 if not lang then
 return "_You're Not_ *Moderator*"
 else
-return "شما مدیر گروه نیستید"
+return "✖️شما مدیر گروه نیستید✖️"
 end
 end 
 
@@ -1829,7 +1829,7 @@ local lock_video = data[tostring(target)]["settings"]["lock_video"]
 if not lang then
 return "🔓*lock Video* _Is Already Disabled_🔓" 
 elseif lang then
-return "🔓قفل فیلم باز است🔓"
+return "🔓قفل فیلم غیرفعال است🔓"
 end
 else 
 data[tostring(target)]["settings"]["lock_video"] = "no"
@@ -1837,7 +1837,7 @@ data[tostring(target)]["settings"]["lock_video"] = "no"
 if not lang then
 return "🔓*lock Video* _Has Been Disabled_🔓" 
 else
-return "🔓قفل فیلم باز شد🔓"
+return "🔓قفل فیلم غیرفعال شد🔓"
 end
 end
 end
@@ -1849,7 +1849,7 @@ if not is_mod(msg) then
 if not lang then
  return "_You're Not_ *Moderator*"
 else
- return "شما مدیر گروه نیستید"
+ return "✖️شما مدیر گروه نیستید✖️"
 end
 end
 
@@ -1878,7 +1878,7 @@ local lang = redis:get(hash)
 if not lang then
 return "_You're Not_ *Moderator*"
 else
-return "شما مدیر گروه نیستید"
+return "✖️شما مدیر گروه نیستید✖️"
 end
 end 
 
@@ -1887,7 +1887,7 @@ local lock_audio = data[tostring(target)]["settings"]["lock_audio"]
 if not lang then
 return "🔓*lock Audio* _Is Already Disabled_🔓" 
 elseif lang then
-return "🔓قفل آهنک باز است🔓"
+return "🔓قفل آهنک غیرفعال است🔓"
 end
 else 
 data[tostring(target)]["settings"]["lock_audio"] = "no"
@@ -1895,7 +1895,7 @@ data[tostring(target)]["settings"]["lock_audio"] = "no"
 if not lang then 
 return "🔓*lock Audio* _Has Been Disabled_🔓"
 else
-return "🔓قفل آهنگ باز شد🔓" 
+return "🔓قفل آهنگ غیرفعال شد🔓" 
 end
 end
 end
@@ -1907,7 +1907,7 @@ if not is_mod(msg) then
 if not lang then
  return "_You're Not_ *Moderator*"
 else
- return "شما مدیر گروه نیستید"
+ return "✖️شما مدیر گروه نیستید✖️"
 end
 end
 
@@ -1936,7 +1936,7 @@ local lang = redis:get(hash)
 if not lang then
 return "_You're Not_ *Moderator*"
 else
-return "شما مدیر گروه نیستید"
+return "✖️شما مدیر گروه نیستید✖️"
 end
 end 
 
@@ -1945,7 +1945,7 @@ local lock_voice = data[tostring(target)]["settings"]["lock_voice"]
 if not lang then
 return "🔓*lock Voice* _Is Already Disabled_🔓" 
 elseif lang then
-return "🔓قفل صدا باز است🔓"
+return "🔓قفل صدا غیرفعال است🔓"
 end
 else 
 data[tostring(target)]["settings"]["lock_voice"] = "no"
@@ -1953,7 +1953,7 @@ data[tostring(target)]["settings"]["lock_voice"] = "no"
 if not lang then 
 return "🔓*lock Voice* _Has Been Disabled_🔓" 
 else
-return "🔓قفل صدا باز شد🔓"
+return "🔓قفل صدا غیرفعال شد🔓"
 end
 end
 end
@@ -1965,7 +1965,7 @@ if not is_mod(msg) then
 if not lang then
  return "_You're Not_ *Moderator*"
 else
- return "شما مدیر گروه نیستید"
+ return "✖️شما مدیر گروه نیستید✖️"
 end
 end
 
@@ -1994,7 +1994,7 @@ local lang = redis:get(hash)
 if not lang then
 return "_You're Not_ *Moderator*"
 else
-return "شما مدیر گروه نیستید"
+return "✖️شما مدیر گروه نیستید✖️"
 end 
 end
 
@@ -2003,7 +2003,7 @@ local lock_sticker = data[tostring(target)]["settings"]["lock_sticker"]
 if not lang then
 return "🔓*lock Sticker* _Is Already Disabled_🔓" 
 elseif lang then
-return "🔓قفل استیکر باز است🔓"
+return "🔓قفل استیکر غیرفعال است🔓"
 end
 else 
 data[tostring(target)]["settings"]["lock_sticker"] = "no"
@@ -2011,7 +2011,7 @@ data[tostring(target)]["settings"]["lock_sticker"] = "no"
 if not lang then 
 return "🔓*lock Sticker* _Has Been Disabled_🔓"
 else
-return "🔓قفل استیکر باز شد🔓"
+return "🔓قفل استیکر غیرفعال شد🔓"
 end 
 end
 end
@@ -2023,7 +2023,7 @@ if not is_mod(msg) then
 if not lang then
  return "_You're Not_ *Moderator*"
 else
- return "شما مدیر گروه نیستید"
+ return "✖️شما مدیر گروه نیستید✖️"
 end
 end
 
@@ -2052,7 +2052,7 @@ local lang = redis:get(hash)
 if not lang then
 return "_You're Not_ *Moderator*"
 else
-return "شما مدیر گروه نیستید"
+return "✖️شما مدیر گروه نیستید✖️"
 end
 end 
 
@@ -2061,7 +2061,7 @@ local lock_contact = data[tostring(target)]["settings"]["lock_contact"]
 if not lang then
 return "🔓*lock Contact* _Is Already Disabled_🔓" 
 elseif lang then
-return "🔓قفل مخاطب باز است🔓"
+return "🔓قفل مخاطب غیرفعال است🔓"
 end
 else 
 data[tostring(target)]["settings"]["lock_contact"] = "no"
@@ -2069,7 +2069,7 @@ data[tostring(target)]["settings"]["lock_contact"] = "no"
 if not lang then
 return "🔓*lock Contact* _Has Been Disabled_🔓" 
 else
-return "🔓قفل مخاطب باز شد🔓"
+return "🔓قفل مخاطب غیرفعال شد🔓"
 end
 end
 end
@@ -2081,7 +2081,7 @@ if not is_mod(msg) then
 if not lang then
  return "_You're Not_ *Moderator*"
 else
- return "شما مدیر گروه نیستید"
+ return "✖️شما مدیر گروه نیستید✖️"
 end
 end
 
@@ -2110,7 +2110,7 @@ local lang = redis:get(hash)
 if not lang then
 return "_You're Not_ *Moderator*"
 else
-return "شما مدیر گروه نیستید"
+return "✖️شما مدیر گروه نیستید✖️"
 end
 end 
 
@@ -2119,7 +2119,7 @@ local lock_forward = data[tostring(target)]["settings"]["lock_forward"]
 if not lang then
 return "🔓*lock Forward* _Is Already Disabled_🔓"
 elseif lang then
-return "🔓قفل فوروارد باز است🔓"
+return "🔓قفل فوروارد غیرفعال است🔓"
 end 
 else 
 data[tostring(target)]["settings"]["lock_forward"] = "no"
@@ -2127,7 +2127,7 @@ data[tostring(target)]["settings"]["lock_forward"] = "no"
 if not lang then 
 return "🔓*lock Forward* _Has Been Disabled_🔓" 
 else
-return "🔓قفل فوروارد باز شد🔓"
+return "🔓قفل فوروارد غیرفعال شد🔓"
 end
 end
 end
@@ -2139,7 +2139,7 @@ if not is_mod(msg) then
 if not lang then
  return "_You're Not_ *Moderator*"
 else
- return "شما مدیر گروه نیستید"
+ return "✖️شما مدیر گروه نیستید✖️"
 end
 end
 
@@ -2168,7 +2168,7 @@ local lang = redis:get(hash)
 if not lang then
 return "_You're Not_ *Moderator*"
 else
-return "شما مدیر گروه نیستید"
+return "✖️شما مدیر گروه نیستید✖️"
 end
 end 
 
@@ -2177,7 +2177,7 @@ local lock_location = data[tostring(target)]["settings"]["lock_location"]
 if not lang then
 return "🔓*lock Location* _Is Already Disabled_🔓" 
 elseif lang then
-return "🔓قفل موقعیت باز است🔓"
+return "🔓قفل موقعیت غیرفعال است🔓"
 end
 else 
 data[tostring(target)]["settings"]["lock_location"] = "no"
@@ -2185,7 +2185,7 @@ data[tostring(target)]["settings"]["lock_location"] = "no"
 if not lang then
 return "🔓*lock Location* _Has Been Disabled_🔓" 
 else
-return "🔓قفل موقعیت باز شد🔓"
+return "🔓قفل موقعیت غیرفعال شد🔓"
 end
 end
 end
@@ -2197,7 +2197,7 @@ if not is_mod(msg) then
 if not lang then
  return "_You're Not_ *Moderator*"
 else
-return "شما مدیر گروه نیستید"
+return "✖️شما مدیر گروه نیستید✖️"
 end
 end
 
@@ -2226,7 +2226,7 @@ local lang = redis:get(hash)
 if not lang then
 return "_You're Not_ *Moderator*"
 else
-return "شما مدیر گروه نیستید"
+return "✖️شما مدیر گروه نیستید✖️"
 end
 end 
 
@@ -2235,7 +2235,7 @@ local lock_document = data[tostring(target)]["settings"]["lock_document"]
 if not lang then
 return "🔓*lock Document* _Is Already Disabled_🔓" 
 elseif lang then
-return "🔓قفل فایل باز است🔓"
+return "🔓قفل فایل غیرفعال است🔓"
 end
 else 
 data[tostring(target)]["settings"]["lock_document"] = "no"
@@ -2243,7 +2243,7 @@ data[tostring(target)]["settings"]["lock_document"] = "no"
 if not lang then
 return "🔓*lock Document* _Has Been Disabled_🔓" 
 else
-return "🔓قفل فایل باز شد🔓"
+return "🔓قفل فایل غیرفعال شد🔓"
 end
 end
 end
@@ -2255,7 +2255,7 @@ if not is_mod(msg) then
 if not lang then
  return "_You're Not_ *Moderator*"
 else
- return "شما مدیر گروه نیستید"
+ return "✖️شما مدیر گروه نیستید✖️"
 end
 end
 
@@ -2284,7 +2284,7 @@ local lang = redis:get(hash)
 if not lang then
 return "_You're Not_ *Moderator*"
 else
-return "شما مدیر گروه نیستید"
+return "✖️شما مدیر گروه نیستید✖️"
 end 
 end
 
@@ -2293,7 +2293,7 @@ local lock_tgservice = data[tostring(target)]["settings"]["lock_tgservice"]
 if not lang then
 return "🔓*lock TgService* _Is Already Disabled_🔓"
 elseif lang then
-return "🔓قفل خدمات تلگرام باز است🔓"
+return "🔓قفل خدمات تلگرام غیرفعال است🔓"
 end 
 else 
 data[tostring(target)]["settings"]["lock_tgservice"] = "no"
@@ -2301,7 +2301,7 @@ data[tostring(target)]["settings"]["lock_tgservice"] = "no"
 if not lang then
 return "🔓*lock TgService* _Has Been Disabled_🔓"
 else
-return "🔓قفل خدمات تلگرام باز شد🔓"
+return "🔓قفل خدمات تلگرام غیرفعال شد🔓"
 end 
 end
 end
@@ -2479,7 +2479,7 @@ return lock_webpage(msg, data, target)
 end
 end
 
-if matches[1] == "باز کردن" and is_mod(msg) then
+if matches[1] == "غیرفعال کردن" and is_mod(msg) then
 local target = msg.chat_id_
 if matches[2] == "لینک" then
 return unlock_link(msg, data, target)
@@ -2564,7 +2564,7 @@ return lock_game(msg ,data, target)
 end
 end
 
-if matches[1] == "باز کردن" and is_mod(msg) then
+if matches[1] == "غیرفعال کردن" and is_mod(msg) then
 local target = msg.chat_id_
 if matches[2] == "همه" then
 return unlock_all(msg, data, target)
@@ -2942,11 +2942,11 @@ patterns ={
 "^(لیست ادمین ها)$",
 "^(لیست مدیران)$",
 "^(قفل) (.*)$",
-"^(باز کردن) (.*)$",
+"^(غیرفعال کردن) (.*)$",
 "^(تنظیمات)$",
 "^(لیست قفل)$",
 "^(قفل) (.*)$",
-"^(باز کردن) (.*)$",
+"^(غیرفعال کردن) (.*)$",
 "^(لینک)$",
 "^(تنظیم لینک)$",
 "^(قوانین)$",

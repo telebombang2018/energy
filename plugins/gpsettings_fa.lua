@@ -2870,7 +2870,6 @@ end
 if matches[1] == "راهنما" and is_mod(msg) then
 if not lang then
 text = [[
-[Forwarded from my_name_is_ehsan]
 💠 ENERGY HELP 💠
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
 🔶 !mod help
@@ -2898,7 +2897,6 @@ text = [[
 
 elseif lang then
 text = [[
-[Forwarded from my_name_is_ehsan]
 💠 ENERGY HELP 💠
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
 🔶 !mod help

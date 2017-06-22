@@ -1,4 +1,4 @@
-# tele_bom_bang_new or ENERGY_BOT
+# tele_bom_bang_new or ENERGY
 
 cd $HOME
 _________

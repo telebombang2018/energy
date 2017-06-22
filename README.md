@@ -6,7 +6,9 @@ ________
 نصب اتولانچ
 --------------
 cd energy 
+
 chmod +x autoenergy.sh 
+
 screen ./autoenergy.sh
 *****************
 لانچ دوباره

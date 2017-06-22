@@ -1,14 +1,6 @@
 # tele_bom_bang_new or ENERGY
 
-cd $HOME
-_________
-cd energy
-_________
-chmod +x energy.sh
-_________
-./energy.sh install
-_________
-./energy.sh
+cd $HOME && cd energy && chmod +x energy.sh && ./energy.sh install && ./energy.sh
 ________
 *****************
 نصب اتولانچ

@@ -11,7 +11,7 @@ _________
 ./energy.sh
 ________
 *****************
-AUTO LAUNCH
+نصب اتولانچ
 --------------
 cd energy 
 chmod +x autoenergy.sh 

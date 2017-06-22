@@ -1,0 +1,17 @@
+cd $HOME
+_________
+cd energy
+_________
+chmod +x energy.sh
+_________
+./energy.sh install
+_________
+./energy.sh
+________
+*****************
+AUTO LAUNCH
+--------------
+cd energy 
+chmod +x autoenergy.sh 
+screen ./autoenergy.sh
+--------------

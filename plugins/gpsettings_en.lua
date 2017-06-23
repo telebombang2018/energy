@@ -2892,7 +2892,7 @@ end
 if matches[1] == "help" and is_mod(msg) then
 if not lang then
 text = [[
-💠 ENERGY HELP 💠
+ENERGY HELP
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
 🔶 !mod help
 ⚙️》راهنما مدیریت
@@ -2919,7 +2919,8 @@ text = [[
 
 elseif lang then
 text = [[
-💠 ENERGY HELP 💠
+			
+ENERGY HELP
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
 🔶 !mod help
 ⚙️》راهنما مدیریت

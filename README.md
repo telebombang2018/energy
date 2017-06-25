@@ -1,4 +1,5 @@
 # tele_bom_bang_new (or) ENERGY | v11 (or) edit 11
+ستاره یادت نره حمایت کن دمت گرم
 
 cd $HOME && git clone https://github.com/telebombang2018/energy.git && cd energy && chmod +x energy.sh && ./energy.sh install && ./energy.sh
 ________

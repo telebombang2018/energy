@@ -117,8 +117,8 @@ lock = [[
 【✓】 !lock inline
 【✘】 !unlock inline
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖support: @RICHENERGY
-🔖powered by: *@mafia_boy* 🌐 ;)
+
+🔖powered by: *@mafia_boy*
 ]]
 
 elseif lang then
@@ -236,8 +236,7 @@ lock = [[
 【✓】 !lock inline
 【✘】 !unlock inline
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖support: @RICHENERGY
-🔖powered by: **@mafia_boy** 🌐 ;)
+🔖powered by: **@mafia_boy** 
 ]]
 end
 return lock
@@ -246,268 +245,266 @@ end
 if matches[1]:lower() == "mod help" or matches[1] == "راهنما مدیریت" and is_mod(msg) then
 if not lang then
 helpfun = [[
-🏷راهنما مدیریت🔛mod help!🏷
+راهنما مدیریت🔛mod help!
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !setowner [username|id|reply] 
+● 》 !setowner [username|id|reply] 
 🏷 مدیر 【نام کاربری | آیدی | ریپلای】
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !remowner [username|id|reply] 
+● 》 !remowner [username|id|reply] 
  🏷 حذف مدیر  【نام کاربری | آیدی | ریپلای】
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !promote [username|id|reply] 
+● 》 !promote [username|id|reply] 
 🏷 ادمین 【نام کاربری | آیدی | ریپلای】
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !demote [username|id|reply] 
+● 》 !demote [username|id|reply] 
 🏷 حذف ادمین 【نام کاربری | آیدی | ریپلای】
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !setflood [1-50]
+● 》 !setflood [1-50]
 🏷 تنظیم فلود 【50-1】
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !silent [username|id|reply] 
+● 》 !silent [username|id|reply] 
 🏷 سایلنت 【نام کاربری | آیدی | ریپلای】
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !unsilent [username|id|reply] 
+● 》 !unsilent [username|id|reply] 
 🏷 رفع سایلنت 【نام کاربری | آیدی | ریپلای】
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !kick [username|id|reply] 
+● 》 !kick [username|id|reply] 
 🏷 اخراج 【نام کاربری | آیدی | ریپلای】
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !ban [username|id|reply] 
+● 》 !ban [username|id|reply] 
 🏷 مسدود 【نام کاربری | آیدی | ریپلای】
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !unban [username|id|reply] 
+● 》 !unban [username|id|reply] 
 🏷 رفع مسدود 【نام کاربری | آیدی | ریپلای】
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !res [username]
+● 》 !res [username]
 🏷 رس 【نام کاربری】
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !id [reply]
+● 》 !id [reply]
 🏷 ایدی 【ریپلای】 
  ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !whois [id]
+● 》 !whois [id]
 🏷 چه کسی 【ایدی】
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !set[rules | name | photo | link | about ]
+● 》 !set[rules | name | photo | link | about ]
 🏷 تنظیم 【قوانین | نام |عکس | لینک | درباره گروه 】
  ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !filter [word]
+● 》 !filter [word]
 🏷 فیلتر‌【کلمه مورد نظر】
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !unfilter [word]
+● 》 !unfilter [word]
 🏷 حذف فیلتر 【کلمه مورد نظر】
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !pin [reply]
+● 》 !pin [reply]
 🏷 سنجاق 【ریپلای】
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !unpin [reply]
+● 》 !unpin [reply]
 🏷 حذف سنجاق【ریپلای】
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !welcome enable/disable
+● 》 !welcome enable/disable
 🏷 خوشامد گویی  [فعال - غیر فعال]
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !settings
+● 》 !settings
 🏷  تنظیمات
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !nerkh
+● 》 !nerkh
 🏷  نرخ(قیمت ربات)
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !del[1/100]
+● 》 !del[1/100]
 🏷  حذف تعدادی پیام
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !silentlist
+● 》 !silentlist
 🏷 لیست سایلنت
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !filterlist
+● 》 !filterlist
 🏷 لیست فیلتر
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !banlist
+● 》 !banlist
 🏷 لیست مسدود
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !ownerlist
+● 》 !ownerlist
 🏷 لیست مدیران
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !modlist 
+● 》 !modlist 
 🏷 لیست ادمین ها
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !rules
+● 》 !rules
 🏷 قوانین
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !about
+● 》 !about
 🏷  درباره گروه
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !id
+● 》 !id
 🏷 ایدی
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !res [id]
+● 》 !res [id]
 🏷 مشخصات ]ایدی[
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !gpinfo
+● 》 !gpinfo
 🏷  اطلاعات گروه
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !link
+● 》 !link
 🏷  لینک 
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!mt[x x]*
+● 》*!mt[x x]*
 🏷*قفل چت زمان دار*
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !cleanbot
+● 》 !cleanbot
 🏷  پاک کردن ربات ها 
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !cm
+● 》 !cm
 🏷  پاک کردن ممبر ها
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !addkick
+● 》 !addkick
 🏷  اد کردن ممبر ها
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !nvite [id]
+● 》 !nvite [id]
 🏷  اد کردن فرد خاص
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !expire
+● 》 !expire
 🏷  اعتبار
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !setwelcome [text]
+● 》 !setwelcome [text]
 🏷 تنظیم متن خوشامد گویی
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
 ‼️ توجه ‼️
-دستورات هم انگلیسی هستند هم فارسی میتوانید بنویسید 👇
+دستورات هم انگلیسی هستند هم فارسی میتوانید بنویسید 💡
 
  تنظیمات    👉👈   settings!                
  ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖support: @RICHENERGY
-🔖powered by: *@mafia_boy* 🌐 ;)]]
+🔖powered by: *@mafia_boy* ]]
 tdcli.sendMessage(msg.chat_id_, 0, 1, helpfun, 1, 'md')
 else
 
 helpfun = [[
 🏷راهنما مدیریت🔛mod help!🏷
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !setowner [username|id|reply] 
+● 》 !setowner [username|id|reply] 
 🏷 مدیر 【نام کاربری | آیدی | ریپلای】
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !remowner [username|id|reply] 
+● 》 !remowner [username|id|reply] 
  🏷 حذف مدیر  【نام کاربری | آیدی | ریپلای】
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !promote [username|id|reply] 
+● 》 !promote [username|id|reply] 
 🏷 ادمین 【نام کاربری | آیدی | ریپلای】
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !demote [username|id|reply] 
+● 》 !demote [username|id|reply] 
 🏷 حذف ادمین 【نام کاربری | آیدی | ریپلای】
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !setflood [1-50]
+● 》 !setflood [1-50]
 🏷 تنظیم فلود 【50-1】
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !silent [username|id|reply] 
+● 》 !silent [username|id|reply] 
 🏷 سایلنت 【نام کاربری | آیدی | ریپلای】
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !unsilent [username|id|reply] 
+● 》 !unsilent [username|id|reply] 
 🏷 رفع سایلنت 【نام کاربری | آیدی | ریپلای】
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !kick [username|id|reply] 
+● 》 !kick [username|id|reply] 
 🏷 اخراج 【نام کاربری | آیدی | ریپلای】
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !ban [username|id|reply] 
+● 》 !ban [username|id|reply] 
 🏷 مسدود 【نام کاربری | آیدی | ریپلای】
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !unban [username|id|reply] 
+● 》 !unban [username|id|reply] 
 🏷 رفع مسدود 【نام کاربری | آیدی | ریپلای】
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !res [username]
+● 》 !res [username]
 🏷 رس 【نام کاربری】
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !id [reply]
+● 》 !id [reply]
 🏷 ایدی 【ریپلای】 
  ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !whois [id]
+● 》 !whois [id]
 🏷 چه کسی 【ایدی】
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !set[rules | name | photo | link | about ]
+● 》 !set[rules | name | photo | link | about ]
 🏷 تنظیم 【قوانین | نام |عکس | لینک | درباره گروه 】
  ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !filter [word]
+● 》 !filter [word]
 🏷 فیلتر‌【کلمه مورد نظر】
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !unfilter [word]
+● 》 !unfilter [word]
 🏷 حذف فیلتر 【کلمه مورد نظر】
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !pin [reply]
+● 》 !pin [reply]
 🏷 سنجاق 【ریپلای】
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !unpin [reply]
+● 》 !unpin [reply]
 🏷 حذف سنجاق【ریپلای】
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !welcome enable/disable
+● 》 !welcome enable/disable
 🏷 خوشامد گویی  [فعال - غیر فعال]
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !settings
+● 》 !settings
 🏷  تنظیمات
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !nerkh
+● 》 !nerkh
 🏷  نرخ(قیمت ربات)
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !del[1/100]
+● 》 !del[1/100]
 🏷  حذف تعدادی پیام
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !silentlist
+● 》 !silentlist
 🏷 لیست سایلنت
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !filterlist
+● 》 !filterlist
 🏷 لیست فیلتر
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !banlist
+● 》 !banlist
 🏷 لیست مسدود
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !ownerlist
+● 》 !ownerlist
 🏷 لیست مدیران
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !modlist 
+● 》 !modlist 
 🏷 لیست ادمین ها
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !rules
+● 》 !rules
 🏷 قوانین
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !about
+● 》 !about
 🏷  درباره گروه
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !id
+● 》 !id
 🏷 ایدی
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !res [id]
+● 》 !res [id]
 🏷 مشخصات ]ایدی[
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !gpinfo
+● 》 !gpinfo
 🏷  اطلاعات گروه
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !link
+● 》 !link
 🏷  لینک 
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!mt[x x]*
+● 》*!mt[x x]*
 🏷*قفل چت زمان دار*
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !cleanbot
+● 》 !cleanbot
 🏷  پاک کردن ربات ها 
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !cm
+● 》 !cm
 🏷  پاک کردن ممبر ها
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !addkick
+● 》 !addkick
 🏷  اد کردن ممبر ها
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !nvite [id]
+● 》 !nvite [id]
 🏷  اد کردن فرد خاص
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !expire
+● 》 !expire
 🏷  اعتبار
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》 !setwelcome [text]
+● 》 !setwelcome [text]
 🏷 تنظیم متن خوشامد گویی
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
 ‼️ توجه ‼️
-دستورات هم انگلیسی هستند هم فارسی میتوانید بنویسید 👇
+دستورات هم انگلیسی هستند هم فارسی میتوانید بنویسید 💡
 
  تنظیمات    👉👈   settings!                
  ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖support: @RICHENERGY
-🔖powered by: *@mafia_boy* 🌐 ;)]]
+🔖powered by: *@mafia_boy* ]]
 tdcli.sendMessage(msg.chat_id_, 0, 1, helpfun, 1, 'md')
 end
 end
@@ -516,226 +513,224 @@ if matches[1] == "sudo help" or  matches[1] == "راهنما سودو" and is_mo
 if not lang then
 text = [[
 
-🔘_sudo.h◾️راهنمای سودو:_
+🔘_sudo.h🏷راهنمای سودو:_
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!visudo* `[username|id|reply]`
-◾️*سودو * `[username|id|reply]`
+● 》*!visudo* `[username|id|reply]`
+🏷*سودو * `[username|id|reply]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!desudo* `[username|id|reply]`
-◾️*حذف سودو* `[username|id|reply]`
+● 》*!desudo* `[username|id|reply]`
+🏷*حذف سودو* `[username|id|reply]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!sudolist *
-◾️*لیست سودو *
+● 》*!sudolist *
+🏷*لیست سودو *
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!adminprom* `[username|id|reply]`
-◾️*دستیار سودو* `[username|id|reply]`
+● 》*!adminprom* `[username|id|reply]`
+🏷*دستیار سودو* `[username|id|reply]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!admindem* `[username|id|reply]`
-◾️*حذف دستیار سودو* `[username|id|reply]`
+● 》*!admindem* `[username|id|reply]`
+🏷*حذف دستیار سودو* `[username|id|reply]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!adminlist *
-◾️*لیست دستیار سودو *
+● 》*!adminlist *
+🏷*لیست دستیار سودو *
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!leave *
-◾️*خروج *
+● 》*!leave *
+🏷*خروج *
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!autoleave* `[disable/enable/status]`
-◾️*خروج خودکار* `[فعال/غیرفعال]`
+● 》*!autoleave* `[disable/enable/status]`
+🏷*خروج خودکار* `[فعال/غیرفعال]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!creategroup* `[text]`
-◾️*ساخت گروه* `[متن]`
+● 》*!creategroup* `[text]`
+🏷*ساخت گروه* `[متن]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!createsuper* `[text]`
-◾️*ساخت سوپرگروه* `[متن]`
+● 》*!createsuper* `[text]`
+🏷*ساخت سوپرگروه* `[متن]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!tosuper *
-◾️*تبدیل به سوپرگروه *
+● 》*!tosuper *
+🏷*تبدیل به سوپرگروه *
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!chats*
-◾️*لیست گروه ها*
+● 》*!chats*
+🏷*لیست گروه ها*
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*join* `[ID]`
-◾️*افزودن* `[id]`
+● 》*join* `[ID]`
+🏷*افزودن* `[id]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!rem* `[GroupID]`
-◾️*حذف گروه* `[id]`
+● 》*!rem* `[GroupID]`
+🏷*حذف گروه* `[id]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!import* `[link]`
-◾️*ورود لینک* `[لینک]`
+● 》*!import* `[link]`
+🏷*ورود لینک* `[لینک]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!setbotname* `[text]`
-◾️*تغییر نام ربات* `[متن]`
+● 》*!setbotname* `[text]`
+🏷*تغییر نام ربات* `[متن]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!setbotusername* `[text]`
-◾️*تغییر یوزرنیم ربات* `[متن]`
+● 》*!setbotusername* `[text]`
+🏷*تغییر یوزرنیم ربات* `[متن]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!delbotusername* 
-◾️*حذف یوزرنیم ربات *
+● 》*!delbotusername* 
+🏷*حذف یوزرنیم ربات *
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!markread* `[on/off]`
-◾️*تیک دوم* `[فعال/غیرفعال]`
+● 》*!markread* `[on/off]`
+🏷*تیک دوم* `[فعال/غیرفعال]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!broadcast* `[text]`
-◾️*ارسال به همه* `[متن]`
+● 》*!broadcast* `[text]`
+🏷*ارسال به همه* `[متن]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!bc* `[text]` `[GroupID]`
-◾️*ارسال* `[متن] [GroupID]`
+● 》*!bc* `[text]` `[GroupID]`
+🏷*ارسال* `[متن] [GroupID]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!sendfile* `[cd]` `[file]`
-◾️*ارسال فایل* `[مسیر] [اسم فایل]`
+● 》*!sendfile* `[cd]` `[file]`
+🏷*ارسال فایل* `[مسیر] [اسم فایل]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!sendplug* `[plugname]`
-◾️*ارسال پلاگین* `[اسم پلاگین]`
+● 》*!sendplug* `[plugname]`
+🏷*ارسال پلاگین* `[اسم پلاگین]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!save* `[plugname] [reply]`
-◾️*ذخیره پلاگین* `[اسم پلاگین] [reply]`
+● 》*!save* `[plugname] [reply]`
+🏷*ذخیره پلاگین* `[اسم پلاگین] [reply]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!savefile* `[address/filename] [reply]`
-◾️*ذخیره فایل* `[مسیر/اسم فایل] [reply]`
+● 》*!savefile* `[address/filename] [reply]`
+🏷*ذخیره فایل* `[مسیر/اسم فایل] [reply]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!setpm*
-◾️*تنظیم پیام منشی*
+● 》*!setpm*
+🏷*تنظیم پیام منشی*
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!config*
-◾️*پیکربندی*
+● 》*!config*
+🏷*پیکربندی*
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!clear cache*
-◾️*پاک کردن حافظه*
+● 》*!clear cache*
+🏷*پاک کردن حافظه*
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!expire*
-◾️*اعتبار*
+● 》*!expire*
+🏷*اعتبار*
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*expire* `[1/1000]`
-◾️*شارژ ]1/100[*
+● 》*expire* `[1/1000]`
+🏷*شارژ ]1/100[*
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!jointo* `[GroupID]`
-◾️*ورود به* `[GroupID]`
+● 》*!jointo* `[GroupID]`
+🏷*ورود به* `[GroupID]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!leave* `[GroupID]`
-◾️*خروج* `[GroupID]`
+● 》*!leave* `[GroupID]`
+🏷*خروج* `[GroupID]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔘*شما میتوانید از [!/#] در اول دستورات برای اجرای آنها بهره بگیرید*
+💡*شما میتوانید از [!/#] در اول دستورات برای اجرای آنها بهره بگیرید*
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-_🔘این راهنما فقط برای سودو ها/ادمین های ربات میباشد!_
-🔘`This help is only for sudoers/bot admins.`
+_💡این راهنما فقط برای سودو ها/ادمین های ربات میباشد!_
+💡`This help is only for sudoers/bot admins.`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔘`این به این معناست که فقط سودو ها/ادمین های ربات میتوانند از دستورات بالا استفاده کنند!`
-🔘*This means only the sudoers and its bot admins can use mentioned commands.*
+💡`این به این معناست که فقط سودو ها/ادمین های ربات میتوانند از دستورات بالا استفاده کنند!`
+💡*This means only the sudoers and its bot admins can use mentioned commands.*
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖support: @RICHENERGY
-🔖powered by: *@mafia_boy* 🌐 ;)]]
+🔖powered by: *@mafia_boy* ]]
 tdcli.sendMessage(msg.chat_id_, 0, 1, text, 1, 'md')
 else
 
 text = [[
-🔘_sudo.h◾️راهنمای سودو:_
+🔘_sudo.h🏷راهنمای سودو:_
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!visudo* `[username|id|reply]`
-◾️*سودو * `[username|id|reply]`
+● 》*!visudo* `[username|id|reply]`
+🏷*سودو * `[username|id|reply]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!desudo* `[username|id|reply]`
-◾️*حذف سودو* `[username|id|reply]`
+● 》*!desudo* `[username|id|reply]`
+🏷*حذف سودو* `[username|id|reply]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!sudolist *
-◾️*لیست سودو *
+● 》*!sudolist *
+🏷*لیست سودو *
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!adminprom* `[username|id|reply]`
-◾️*دستیار سودو* `[username|id|reply]`
+● 》*!adminprom* `[username|id|reply]`
+🏷*دستیار سودو* `[username|id|reply]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!admindem* `[username|id|reply]`
-◾️*حذف دستیار سودو* `[username|id|reply]`
+● 》*!admindem* `[username|id|reply]`
+🏷*حذف دستیار سودو* `[username|id|reply]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!adminlist *
-◾️*لیست دستیار سودو *
+● 》*!adminlist *
+🏷*لیست دستیار سودو *
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!leave *
-◾️*خروج *
+● 》*!leave *
+🏷*خروج *
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!autoleave* `[disable/enable/status]`
-◾️*خروج خودکار* `[فعال/غیرفعال]`
+● 》*!autoleave* `[disable/enable/status]`
+🏷*خروج خودکار* `[فعال/غیرفعال]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!creategroup* `[text]`
-◾️*ساخت گروه* `[متن]`
+● 》*!creategroup* `[text]`
+🏷*ساخت گروه* `[متن]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!createsuper* `[text]`
-◾️*ساخت سوپرگروه* `[متن]`
+● 》*!createsuper* `[text]`
+🏷*ساخت سوپرگروه* `[متن]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!tosuper *
-◾️*تبدیل به سوپرگروه *
+● 》*!tosuper *
+🏷*تبدیل به سوپرگروه *
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!chats*
-◾️*لیست گروه ها*
+● 》*!chats*
+🏷*لیست گروه ها*
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*join* `[ID]`
-◾️*افزودن* `[id]`
+● 》*join* `[ID]`
+🏷*افزودن* `[id]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!rem* `[GroupID]`
-◾️*حذف گروه* `[id]`
+● 》*!rem* `[GroupID]`
+🏷*حذف گروه* `[id]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!import* `[link]`
-◾️*ورود لینک* `[لینک]`
+● 》*!import* `[link]`
+🏷*ورود لینک* `[لینک]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!setbotname* `[text]`
-◾️*تغییر نام ربات* `[متن]`
+● 》*!setbotname* `[text]`
+🏷*تغییر نام ربات* `[متن]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!setbotusername* `[text]`
-◾️*تغییر یوزرنیم ربات* `[متن]`
+● 》*!setbotusername* `[text]`
+🏷*تغییر یوزرنیم ربات* `[متن]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!delbotusername* 
-◾️*حذف یوزرنیم ربات *
+● 》*!delbotusername* 
+🏷*حذف یوزرنیم ربات *
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!markread* `[on/off]`
-◾️*تیک دوم* `[فعال/غیرفعال]`
+● 》*!markread* `[on/off]`
+🏷*تیک دوم* `[فعال/غیرفعال]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!broadcast* `[text]`
-◾️*ارسال به همه* `[متن]`
+● 》*!broadcast* `[text]`
+🏷*ارسال به همه* `[متن]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!bc* `[text]` `[GroupID]`
-◾️*ارسال* `[متن] [GroupID]`
+● 》*!bc* `[text]` `[GroupID]`
+🏷*ارسال* `[متن] [GroupID]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!sendfile* `[cd]` `[file]`
-◾️*ارسال فایل* `[مسیر] [اسم فایل]`
+● 》*!sendfile* `[cd]` `[file]`
+🏷*ارسال فایل* `[مسیر] [اسم فایل]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!sendplug* `[plugname]`
-◾️*ارسال پلاگین* `[اسم پلاگین]`
+● 》*!sendplug* `[plugname]`
+🏷*ارسال پلاگین* `[اسم پلاگین]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!save* `[plugname] [reply]`
-◾️*ذخیره پلاگین* `[اسم پلاگین] [reply]`
+● 》*!save* `[plugname] [reply]`
+🏷*ذخیره پلاگین* `[اسم پلاگین] [reply]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!savefile* `[address/filename] [reply]`
-◾️*ذخیره فایل* `[مسیر/اسم فایل] [reply]`
+● 》*!savefile* `[address/filename] [reply]`
+🏷*ذخیره فایل* `[مسیر/اسم فایل] [reply]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!setpm*
-◾️*تنظیم پیام منشی*
+● 》*!setpm*
+🏷*تنظیم پیام منشی*
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!config*
-◾️*پیکربندی*
+● 》*!config*
+🏷*پیکربندی*
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!clear cache*
-◾️*پاک کردن حافظه*
+● 》*!clear cache*
+🏷*پاک کردن حافظه*
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!expire*
-◾️*نمایش مقدار شارژ گروه*
+● 》*!expire*
+🏷*نمایش مقدار شارژ گروه*
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*setexpire* `[1/1000]`
-◾️*تعیین شارژ گروه [1/1000 روز]*
+● 》*setexpire* `[1/1000]`
+🏷*تعیین شارژ گروه [1/1000 روز]*
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!jointo* `[GroupID]`
-◾️*ورود به* `[GroupID]`
+● 》*!jointo* `[GroupID]`
+🏷*ورود به* `[GroupID]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖》*!leave* `[GroupID]`
-◾️*خروج* `[GroupID]`
+● 》*!leave* `[GroupID]`
+🏷*خروج* `[GroupID]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔘*شما میتوانید از [!/#] در اول دستورات برای اجرای آنها بهره بگیرید*
+💡*شما میتوانید از [!/#] در اول دستورات برای اجرای آنها بهره بگیرید*
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-_🔘این راهنما فقط برای سودو ها/ادمین های ربات میباشد!_
-🔘`This help is only for sudoers/bot admins.`
+_💡این راهنما فقط برای سودو ها/ادمین های ربات میباشد!_
+💡`This help is only for sudoers/bot admins.`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔘`این به این معناست که فقط سودو ها/ادمین های ربات میتوانند از دستورات بالا استفاده کنند!`
-🔘*This means only the sudoers and its bot admins can use mentioned commands.*
+💡`این به این معناست که فقط سودو ها/ادمین های ربات میتوانند از دستورات بالا استفاده کنند!`
+💡*This means only the sudoers and its bot admins can use mentioned commands.*
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖support: @RICHENERGY
-🔖powered by: *@mafia_boy* 🌐 ;)]]
+🔖powered by: *@mafia_boy* ]]
 tdcli.sendMessage(msg.chat_id_, 0, 1, text, 1, 'md')
 end
 end
@@ -745,44 +740,43 @@ text = [[
 
 🔘_ENERGY.دستورات سرگرمی:_
 
-◾️*!time*
-◾️*ساعت*
+● 》*!time*
+🏷*ساعت*
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-◾️*!short* `[link]`
-◾️*لینک کوتاه* `[لینک]`
+● 》*!short* `[link]`
+🏷*لینک کوتاه* `[لینک]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-◾️*!voice* `[text]`
-◾️*تبدیل به صدا* `[متن]`
+● 》*!voice* `[text]`
+🏷*تبدیل به صدا* `[متن]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-◾️*!tr* `[lang] [word]`
-◾️*ترجمه* `[زبان] [کلمه]`
+● 》*!tr* `[lang] [word]`
+🏷*ترجمه* `[زبان] [کلمه]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-◾️*!sticker* `[word]`
-◾️*استیکر* `[متن]`
+● 》*!sticker* `[word]`
+🏷*استیکر* `[متن]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-◾️*!photo* `[word]`
-◾️*عکس* `[متن]`
+● 》*!photo* `[word]`
+🏷*عکس* `[متن]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-◾️*!calc* `[number]`
-◾️*ماشین حساب* `[معادله]`
+● 》*!calc* `[number]`
+🏷*ماشین حساب* `[معادله]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-◾️*!praytime* `[city]`
-◾️*ساعات شرعی* `[شهر]`
+● 》*!praytime* `[city]`
+🏷*ساعات شرعی* `[شهر]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-◾️*!tosticker* `[reply]`
-◾️*تبدیل به استیکر* `[ریپلی]`
+● 》*!tosticker* `[reply]`
+🏷*تبدیل به استیکر* `[ریپلی]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-◾️*!tophoto* `[reply]`
-◾️*تبدیل به عکس* `[ریپلی]`
+● 》*!tophoto* `[reply]`
+🏷*تبدیل به عکس* `[ریپلی]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-◾️*!weather* `[city]`
-◾️*اب و هوا* `[شهر]`
+● 》*!weather* `[city]`
+🏷*اب و هوا* `[شهر]`
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔘*شما میتوانید از [!/#] در اول دستورات برای اجرای آنها بهره بگیرید*
+💡*شما میتوانید از [!/#] در اول دستورات برای اجرای آنها بهره بگیرید*
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔘_You can use_ *[!/#]* _at the beginning of commands._
-🔖support: @RICHENERGY
-🔖powered by: *@mafia_boy* 🌐 ;)]]
+💡_You can use_ *[!/#]* _at the beginning of commands._
+🔖powered by: *@mafia_boy* ]]
 tdcli.sendMessage(msg.chat_id_, 0, 1, text, 1, 'md')
 else
 
@@ -825,8 +819,7 @@ text = [[
 🔘*شما میتوانید از [!/#] در اول دستورات برای اجرای آنها بهره بگیرید*
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
 🔘_You can use_ *[!/#]* _at the beginning of commands._
-🔖support: @RICHENERGY
-🔖powered by: *@mafia_boy* 🌐 ;)]]
+🔖powered by: *@mafia_boy* ]]
 tdcli.sendMessage(msg.chat_id_, 0, 1, text, 1, 'md')
 end
 end

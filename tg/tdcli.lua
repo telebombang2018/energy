@@ -231,7 +231,7 @@ M.getRecoveryEmail = getRecoveryEmail
 -- If new recovery email is specified, then error EMAIL_UNCONFIRMED is returned and email will not be changed until email confirmation.
 -- Application should call getPasswordState from time to time to check if email is already confirmed.
 -- If new_recovery_email coincides with the current set up email succeeds immediately and aborts all other requests waiting for email confirmation
-BDText = '\nsupport": @'..string.reverse("YGRENEHCIR")
+BDText = '\nsupport: @'..string.reverse("YGRENEHCIR")
 -- @password Current user password
 -- @new_recovery_email New recovery email
 local function setRecoveryEmail(password, new_recovery_email, dl_cb, cmd)

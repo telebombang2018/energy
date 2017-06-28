@@ -38,7 +38,7 @@ function run(msg, matches)
 		redis:hset('expiretime',msg.chat_id_,timeexpire)
 		return "*انقضای ربات تنظیم شد به * _"..matches[2].. "_ *روز* "
 	end
-	if matches[1]:lower() == 'expire' or 'اعتبار' then
+	if matches[1]:lower() == 'expire' then
 		local expiretime = redis:hget ('expiretime', msg.chat_id_)
 		if not expiretime then return '*Unlimited*' else
 			local now = tonumber(os.time())

@@ -2896,19 +2896,19 @@ if matches[1] == "help" and is_mod(msg) then
 if not lang then
 text = [[
 [Help for richenergy]
-💠 ENERGY HELP 💠
+⬛️ ENERGY HELP ⬛️
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔶 !mod help
-⚙️》راهنما مدیریت
+◽️ !mod help
+◾️》راهنما مدیریت
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔷 !lock help
-⚙️》راهنما قفل
+◽️ !lock help
+◾️》راهنما قفل
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔷 !sudo help
-⚙️》راهنما سودو
+◽️ !sudo help
+◾️》راهنما سودو
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔷 !fun help
-⚙️》راهنما فان
+◽️ !fun help
+◾️》راهنما فان
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
 
 ‼️ توجه ‼️
@@ -2921,19 +2921,19 @@ text = [[
 elseif lang then
 text = [[
 [Help for richenergy]
-💠 ENERGY HELP 💠
+⬛️ ENERGY HELP ⬛️
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔶 !mod help
-⚙️》راهنما مدیریت
+◽️ !mod help
+◾️》راهنما مدیریت
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔷 !lock help
-⚙️》راهنما قفل
+◽️ !lock help
+◾️》راهنما قفل
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔷 !sudo help
-⚙️》راهنما سودو
+◽️ !sudo help
+◾️》راهنما سودو
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔷 !fun help
-⚙️》راهنما فان
+◽️ !fun help
+◾️》راهنما فان
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
 
 ‼️ توجه ‼️

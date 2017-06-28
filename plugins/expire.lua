@@ -52,7 +52,7 @@ return {
     "^[!#/]([Ss]etexpire) (.*)$",
 	"^(شارژ) (.*)$",
 	"^[!#/]([Ee]xpire)$",
-    "^(اعتبار)$",
+    
   },
   run = run,
   pre_process = pre_process

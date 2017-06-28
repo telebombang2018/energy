@@ -2897,7 +2897,7 @@ text = [[
 
  راهنما قفل   👉👈  lock help!   
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🌐 @ENERGYTEAM 🌐 ;)]]
+🌐 @ENERGY_TEAM 🌐 ;)]]
 
 elseif lang then
 text = [[
@@ -2925,7 +2925,7 @@ text = [[
 
  راهنما قفل   👉👈  lock help!   
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🌐 @ENERGYTEAM 🌐 ;)]]
+🌐 @ENERGY_TEAM 🌐 ;)]]
 end
 return text
 end

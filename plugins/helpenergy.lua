@@ -117,7 +117,7 @@ lock = [[
 【✓】 !lock inline
 【✘】 !unlock inline
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖powered by: *@mafia_boy*]]
+🔖powered by: *@mafia_boy*)]]
 
 elseif lang then
 
@@ -234,7 +234,7 @@ lock = [[
 【✓】 !lock inline
 【✘】 !unlock inline
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖powered by: **@mafia_boy** ]]
+🔖powered by: *@mafia_boy*)]]
 end
 return lock
 end

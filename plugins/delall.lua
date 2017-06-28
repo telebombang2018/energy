@@ -35,7 +35,7 @@ end
 return {  
 patterns ={ 
 "^[!/#](delall)$", 
-"^پاک کردن$"
+"^پاک کردن همه$"
  }, 
  patterns_fa ={ }, 
   run = amir

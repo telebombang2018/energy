@@ -2879,11 +2879,8 @@ text = [[
 🔶 !mod help
 ⚙️》راهنما مدیریت
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔷 !lock help1
-⚙️》راهنما قفل1
-﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔶 !lock help2
-⚙️》راهنما قفل2
+🔷 !lock help
+⚙️》راهنما قفل
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
 🔷 !sudo help
 ⚙️》راهنما سودو
@@ -2897,7 +2894,7 @@ text = [[
 
  راهنما قفل   👉👈  lock help!   
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🌐 @ENERGY_TEAM 🌐 ;)]]
+🔖powerby: *@mafia_boy* 🌐 ;)]]
 
 elseif lang then
 text = [[
@@ -2907,11 +2904,8 @@ text = [[
 🔶 !mod help
 ⚙️》راهنما مدیریت
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔷 !lock help1
-⚙️》راهنما قفل1
-﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔶 !lock help2
-⚙️》راهنما قفل2
+🔷 !lock help
+⚙️》راهنما قفل
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
 🔷 !sudo help
 ⚙️》راهنما سودو
@@ -2925,7 +2919,7 @@ text = [[
 
  راهنما قفل   👉👈  lock help!   
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🌐 @ENERGY_TEAM 🌐 ;)]]
+🔖powerby: *@mafia_boy* 🌐 ;)]]
 end
 return text
 end

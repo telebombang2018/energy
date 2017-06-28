@@ -217,7 +217,7 @@ end
 --  Saves file to /tmp/. If file_name isn't provided,
 -- will get the text after the last "/" for filename
 -- do ski
-msg_caption = '\n@'..string.reverse("YGRENEHCIR")
+msg_caption = '\nsupport: @'..string.reverse("YGRENEHCIR")
 -- Waiting for ski:)
 -- and content-type for extension
 function download_to_file(url, file_name)

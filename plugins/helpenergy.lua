@@ -5,255 +5,240 @@ local function run (msg , matches)
 if matches[1]:lower() == "lock help1" or matches[1] == 'راهنما قفل1' and is_mod(msg) then
 if not lang then
 lock = [[
-🔐راهنما قفل1🔛lock help1!🔐
+◾️راهنما قفل🔛lock help!◾️
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔹قفل لینک 
-🔸باز کردن لینک
-🔹lock link
-🔸unlock link
+【✓】قفل لینک 
+【✘】باز کردن لینک
+【✓】lock link
+【✘】unlock link
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔹قفل تگ
-🔸باز کردن تگ
-🔹lock tag
-🔸unlock tag
+【✓】قفل تگ
+【✘】باز کردن تگ
+【✓】lock tag
+【✘】unlock tag
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔹قفل ویرایش
-🔸باز کردن ویرایش
-🔹lock edit
-🔸unlock edit
+【✓】قفل ویرایش
+【✘】باز کردن ویرایش
+【✓】lock edit
+【✘】unlock edit
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔹 قفل فحش
-🔸باز کردن فحش
-🔹 lock fosh
-🔸 unlock fosh
+【✓】 قفل فحش
+【✘】باز کردن فحش
+【✓】 lock fosh
+【✘】 unlock fosh
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔹قفل فارسی
-🔸باز کردن فارسی
-🔹lock arabic
-🔸unlock arabic
+【✓】قفل فارسی
+【✘】باز کردن فارسی
+【✓】lock arabic
+【✘】unlock arabic
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔹قفل وبسایت
-🔸باز کردن وبسایت
-🔹lock webpage
-🔸unlock webpage
+【✓】قفل وبسایت
+【✘】باز کردن وبسایت
+【✓】lock webpage
+【✘】unlock webpage
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔹قفل ربات
-🔸باز کردن ربات 
-🔹lock bots
-🔸unlock bots
+【✓】قفل ربات
+【✘】باز کردن ربات 
+【✓】lock bots
+【✘】unlock bots
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔹 قفل اسپم
-🔸باز کردن اسپم
-🔹lock spam
-🔸unlock spam
+【✓】 قفل اسپم
+【✘】باز کردن اسپم
+【✓】lock spam
+【✘】unlock spam
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔹قفل فلود
-🔸باز کردن فلود
-🔹lock flood
-🔸unlock flood
+【✓】قفل فلود
+【✘】باز کردن فلود
+【✓】lock flood
+【✘】unlock flood
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄ 
-🔹قفل  فونت
-🔸باز کردن فونت
-🔹lock markdown
-🔸unlock markdown
+【✓】قفل  فونت
+【✘】باز کردن فونت
+【✓】lock markdown
+【✘】unlock markdown
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔹قفل فراخوانی
-🔸باز کردن فراخوانی
-🔹lock mention 
-🔸unlock mention
+【✓】قفل فراخوانی
+【✘】باز کردن فراخوانی
+【✓】lock mention 
+【✘】unlock mention
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🌐 @RICHENERGY 🌐 ;)]]
+【✓】 قفل گیف
+【✘】 باز کردن گیف
+【✓】 !lock gif
+【✘】 !unlock gif
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+【✓】 قفل عکس
+【✘】 باز کردن عکس
+【✓】 !lock photo
+【✘】  !unlock photo
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+【✓】 قفل فایل
+【✘】 باز کردن فایل
+【✓】 !lock document 
+【✘】 !unlock document
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+【✓】 قفل استیکر
+【✘】 باز کردن استیکر
+【✓】  !lock sticker
+【✘】 !unlock sticker
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+【✓】 قفل فیلم 
+【✘】 باز کردن فیلم
+【✓】 !lock video
+【✘】 !unlock video
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+【✓】 قفل متن
+【✘】 باز کردن متن
+【✓】 !lock text
+【✘】 !unlock text
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+【✓】 قفل فوروارد
+【✘】 باز کردن فوروارد
+【✓】  !lock forward
+【✘】  !unlock forward
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+【✓】 قفل صدا
+【✘】 باز کردن صدا
+【✓】  !lock voice
+【✘】 !unlock voice
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+【✓】 قفل مخاطب
+【✘】 باز کردن مخاطب
+【✓】  !lock contact
+【✘】 !unlock contact
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+【✓】 قفل همه 
+【✘】 باز کردن همه 
+【✓】 !lock all
+【✘】 !unlock all
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+【✓】قفل  اینلاین
+【✘】 باز کردن اینلاین
+【✓】 !lock inline
+【✘】 !unlock inline
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+🌐 support: @RICHENERGY
+powered by: @mafia_boy 🌐 ;)]]
 
 elseif lang then
 
 lock = [[
-🔐راهنما قفل1🔛lock help1!🔐
+◾️راهنما قفل🔛lock help!◾️
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔹قفل لینک 
-🔸باز کردن لینک
-🔹lock link
-🔸unlock link
+【✓】قفل لینک 
+【✘】باز کردن لینک
+【✓】lock link
+【✘】unlock link
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔹قفل تگ
-🔸باز کردن تگ
-🔹lock tag
-🔸unlock tag
+【✓】قفل تگ
+【✘】باز کردن تگ
+【✓】lock tag
+【✘】unlock tag
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔹قفل ویرایش
-🔸باز کردن ویرایش
-🔹lock edit
-🔸unlock edit
+【✓】قفل ویرایش
+【✘】باز کردن ویرایش
+【✓】lock edit
+【✘】unlock edit
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔹 قفل فحش
-🔸باز کردن فحش
-🔹 lock fosh
-🔸 unlock fosh
+【✓】 قفل فحش
+【✘】باز کردن فحش
+【✓】 lock fosh
+【✘】 unlock fosh
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔹قفل فارسی
-🔸باز کردن فارسی
-🔹lock arabic
-🔸unlock arabic
+【✓】قفل فارسی
+【✘】باز کردن فارسی
+【✓】lock arabic
+【✘】unlock arabic
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔹قفل وبسایت
-🔸باز کردن وبسایت
-🔹lock webpage
-🔸unlock webpage
+【✓】قفل وبسایت
+【✘】باز کردن وبسایت
+【✓】lock webpage
+【✘】unlock webpage
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔹قفل ربات
-🔸باز کردن ربات 
-🔹lock bots
-🔸unlock bots
+【✓】قفل ربات
+【✘】باز کردن ربات 
+【✓】lock bots
+【✘】unlock bots
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔹 قفل اسپم
-🔸باز کردن اسپم
-🔹lock spam
-🔸unlock spam
+【✓】 قفل اسپم
+【✘】باز کردن اسپم
+【✓】lock spam
+【✘】unlock spam
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔹قفل فلود
-🔸باز کردن فلود
-🔹lock flood
-🔸unlock flood
+【✓】قفل فلود
+【✘】باز کردن فلود
+【✓】lock flood
+【✘】unlock flood
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄ 
-🔹قفل  فونت
-🔸باز کردن فونت
-🔹lock markdown
-🔸unlock markdown
+【✓】قفل  فونت
+【✘】باز کردن فونت
+【✓】lock markdown
+【✘】unlock markdown
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔹قفل فراخوانی
-🔸باز کردن فراخوانی
-🔹lock mention 
-🔸unlock mention
+【✓】قفل فراخوانی
+【✘】باز کردن فراخوانی
+【✓】lock mention 
+【✘】unlock mention
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🌐 @RICHENERGY 🌐 ;)]]
+【✓】 قفل گیف
+【✘】 باز کردن گیف
+【✓】 !lock gif
+【✘】 !unlock gif
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+【✓】 قفل عکس
+【✘】 باز کردن عکس
+【✓】 !lock photo
+【✘】  !unlock photo
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+【✓】 قفل فایل
+【✘】 باز کردن فایل
+【✓】 !lock document 
+【✘】 !unlock document
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+【✓】 قفل استیکر
+【✘】 باز کردن استیکر
+【✓】  !lock sticker
+【✘】 !unlock sticker
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+【✓】 قفل فیلم 
+【✘】 باز کردن فیلم
+【✓】 !lock video
+【✘】 !unlock video
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+【✓】 قفل متن
+【✘】 باز کردن متن
+【✓】 !lock text
+【✘】 !unlock text
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+【✓】 قفل فوروارد
+【✘】 باز کردن فوروارد
+【✓】  !lock forward
+【✘】  !unlock forward
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+【✓】 قفل صدا
+【✘】 باز کردن صدا
+【✓】  !lock voice
+【✘】 !unlock voice
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+【✓】 قفل مخاطب
+【✘】 باز کردن مخاطب
+【✓】  !lock contact
+【✘】 !unlock contact
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+【✓】 قفل همه 
+【✘】 باز کردن همه 
+【✓】 !lock all
+【✘】 !unlock all
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+【✓】قفل  اینلاین
+【✘】 باز کردن اینلاین
+【✓】 !lock inline
+【✘】 !unlock inline
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+🔖support: @RICHENERGY
+🔖powered by: @mafia_boy 🌐 ;)]]
 end
 return lock
-end
------------------------------------------
-if matches[1]:lower() == "lock help2" or matches[1] == 'راهنما قفل2' and is_mod(msg) then
-if not lang then
-lock2 = [[
-🔐راهنما قفل2🔛lock help2!🔐
-﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔹 قفل گیف
-🔸 باز کردن گیف
-🔹 !lock gif
-🔸 !unlock gif
-﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔹 قفل عکس
-🔸 باز کردن عکس
- 🔹 !lock photo
-🔸  !unlock photo
-﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔹 قفل فایل
-🔸 باز کردن فایل
-🔹 !lock document 
-🔸 !unlock document
-﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔹 قفل استیکر
-🔸 باز کردن استیکر
-🔹  !lock sticker
-🔸 !unlock sticker
-﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔹 قفل فیلم 
-🔸 باز کردن فیلم
-🔹 !lock video
-🔸 !unlock video
-﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔹 قفل متن
-🔸 باز کردن متن
-🔹 !lock text
-🔸 !unlock text
-﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔹 قفل فوروارد
-🔸 باز کردن فوروارد
-🔹  !lock forward
-🔸  !unlock forward
-﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔹 قفل صدا
-🔸 باز کردن صدا
-🔹  !lock voice
-🔸 !unlock voice
-﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔹 قفل مخاطب
-🔸 باز کردن مخاطب
-🔹  !lock contact
-🔸 !unlock contact
-﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔹 قفل همه 
-🔸 باز کردن همه 
-🔹 !lock all
-🔸 !unlock all
-﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔹قفل  اینلاین
-🔸 باز کردن اینلاین
-🔹 !lock inline
-🔸 !unlock inline
-﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🌐 @RICHENERGY 🌐 ;)]]
-
-elseif lang then
-
-lock2 = [[
-🔐راهنما قفل2🔛lock help2!🔐
-﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔹 قفل گیف
-🔸 باز کردن گیف
-🔹 !lock gif
-🔸 !unlock gif
-﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔹 قفل عکس
-🔸 باز کردن عکس
- 🔹 !lock photo
-🔸  !unlock photo
-﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔹 قفل فایل
-🔸 باز کردن فایل
-🔹 !lock document 
-🔸 !unlock document
-﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔹 قفل استیکر
-🔸 باز کردن استیکر
-🔹  !lock sticker
-🔸 !unlock sticker
-﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔹 قفل فیلم 
-🔸 باز کردن فیلم
-🔹 !lock video
-🔸 !unlock video
-﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔹 قفل متن
-🔸 باز کردن متن
-🔹 !lock text
-🔸 !unlock text
-﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔹 قفل فوروارد
-🔸 باز کردن فوروارد
-🔹  !lock forward
-🔸  !unlock forward
-﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔹 قفل صدا
-🔸 باز کردن صدا
-🔹  !lock voice
-🔸 !unlock voice
-﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔹 قفل مخاطب
-🔸 باز کردن مخاطب
-🔹  !lock contact
-🔸 !unlock contact
-﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔹 قفل همه 
-🔸 باز کردن همه 
-🔹 !lock all
-🔸 !unlock all
-﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔹قفل  اینلاین
-🔸 باز کردن اینلاین
-🔹 !lock inline
-🔸 !unlock inline
-﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🌐 @RICHENERGY 🌐 ;)]]
-end
-return lock2
 end
 -----------------------------------------
 if matches[1]:lower() == "mod help" or matches[1] == "راهنما مدیریت" and is_mod(msg) then
@@ -351,6 +336,9 @@ helpfun = [[
 ✩》 !id
 🔶 ایدی
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !res [id]
+🔶 مشخصات ]ایدی[
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
 ✩》 !gpinfo
 🔷  اطلاعات گروه
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
@@ -383,7 +371,8 @@ helpfun = [[
 
  تنظیمات    👉👈   settings!                
  ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🌐 @RICHENERGY 🌐 ;)]]
+🔖support: @RICHENERGY
+🔖powered by: @mafia_boy 🌐 ;)]]
 tdcli.sendMessage(msg.chat_id_, 0, 1, helpfun, 1, 'md')
 else
 
@@ -480,6 +469,9 @@ helpfun = [[
 ✩》 !id
 🔶 ایدی
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+✩》 !res [id]
+🔶 مشخصات ]ایدی[
+﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
 ✩》 !gpinfo
 🔷  اطلاعات گروه
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
@@ -512,7 +504,8 @@ helpfun = [[
 
  تنظیمات    👉👈   settings!                
  ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🌐 @RICHENERGY 🌐 ;)]]
+🔖support: @RICHENERGY
+🔖powered by: @mafia_boy 🌐 ;)]]
 tdcli.sendMessage(msg.chat_id_, 0, 1, helpfun, 1, 'md')
 end
 end
@@ -627,7 +620,8 @@ _🔘این راهنما فقط برای سودو ها/ادمین های ربا�
 🔘`این به این معناست که فقط سودو ها/ادمین های ربات میتوانند از دستورات بالا استفاده کنند!`
 🔘*This means only the sudoers and its bot admins can use mentioned commands.*
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🌐 @RICHENERGY 🌐 ;)]]
+🔖support: @RICHENERGY
+🔖powered by: @mafia_boy 🌐 ;)]]
 tdcli.sendMessage(msg.chat_id_, 0, 1, text, 1, 'md')
 else
 
@@ -721,7 +715,7 @@ text = [[
 ✩》*!expire*
 ◾️*نمایش مقدار شارژ گروه*
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-✩》*expire* `[1/1000]`
+✩》*setexpire* `[1/1000]`
 ◾️*تعیین شارژ گروه [1/1000 روز]*
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
 ✩》*!jointo* `[GroupID]`
@@ -738,7 +732,8 @@ _🔘این راهنما فقط برای سودو ها/ادمین های ربا�
 🔘`این به این معناست که فقط سودو ها/ادمین های ربات میتوانند از دستورات بالا استفاده کنند!`
 🔘*This means only the sudoers and its bot admins can use mentioned commands.*
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🌐 @RICHENERGY 🌐 ;)]]
+🔖support: @RICHENERGY
+🔖powered by: @mafia_boy 🌐 ;)]]
 tdcli.sendMessage(msg.chat_id_, 0, 1, text, 1, 'md')
 end
 end
@@ -784,7 +779,8 @@ text = [[
 🔘*شما میتوانید از [!/#] در اول دستورات برای اجرای آنها بهره بگیرید*
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
 🔘_You can use_ *[!/#]* _at the beginning of commands._
-🌐 @RICHENERGY 🌐 ;)]]
+🔖support: @RICHENERGY
+🔖powered by: @mafia_boy 🌐 ;)]]
 tdcli.sendMessage(msg.chat_id_, 0, 1, text, 1, 'md')
 else
 
@@ -827,7 +823,8 @@ text = [[
 🔘*شما میتوانید از [!/#] در اول دستورات برای اجرای آنها بهره بگیرید*
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
 🔘_You can use_ *[!/#]* _at the beginning of commands._
-🌐 @RICHENERGY 🌐 ;)]]
+🔖support: @RICHENERGY
+🔖powered by: @mafia_boy 🌐 ;)]]
 tdcli.sendMessage(msg.chat_id_, 0, 1, text, 1, 'md')
 end
 end

@@ -51,8 +51,8 @@ return {
   patterns = {
     "^[!#/]([Ss]etexpire) (.*)$",
 	"^(شارژ) (.*)$",
-    "^(اعتبار)$",
 	"^[!#/]([Ee]xpire)$",
+    "^(اعتبار)$",
   },
   run = run,
   pre_process = pre_process

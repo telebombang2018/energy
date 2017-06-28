@@ -101,7 +101,6 @@ function create_config( )
 		"msg-checks",
 		"plugins",
 		"tools",
-		"fun",
 		"Invite",
 		"addkick",
 		"delall",

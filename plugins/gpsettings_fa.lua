@@ -2894,7 +2894,7 @@ text = [[
 
  راهنما قفل   👉👈  lock help!   
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖powerby: *@mafia_boy* 🌐 ;)]]
+🔖powered by: *@mafia_boy*]]
 
 elseif lang then
 text = [[
@@ -2919,7 +2919,7 @@ text = [[
 
  راهنما قفل   👉👈  lock help!   
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
-🔖powerby: *@mafia_boy* 🌐 ;)]]
+🔖powered by: *@mafia_boy*]]
 end
 return text
 end

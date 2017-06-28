@@ -94,6 +94,7 @@ function create_config( )
 		"azan",
 		"del",
 		"id",
+		"mute-time",
 		"cleanbot",
 		"CleanMember",
 		"lock_fosh",

@@ -30,7 +30,7 @@ end
 
 end
 function run(msg, matches)
-	if matches[1]:lower() == 'setexpire' then
+	if matches[1]:lower() == 'setexpire' or 'شارژ' then
 		if not is_sudo(msg) then return end
 		local time = os.time()
 		local buytime = tonumber(os.time())
@@ -38,7 +38,7 @@ function run(msg, matches)
 		redis:hset('expiretime',msg.chat_id_,timeexpire)
 		return "*انقضای ربات تنظیم شد به * _"..matches[2].. "_ *روز* "
 	end
-	if matches[1]:lower() == 'expire' then
+	if matches[1]:lower() == 'expire' or 'اعتبار' then
 		local expiretime = redis:hget ('expiretime', msg.chat_id_)
 		if not expiretime then return '*Unlimited*' else
 			local now = tonumber(os.time())
@@ -50,6 +50,8 @@ end
 return {
   patterns = {
     "^[!#/]([Ss]etexpire) (.*)$",
+	"^[!#/](شارژ) (.*)$",
+    "^[!#/](اعتبار)$",
 	"^[!#/]([Ee]xpire)$",
   },
   run = run,

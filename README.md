@@ -14,6 +14,8 @@ screen ./autoenergy.sh
 *****************
 لانچ دوباره
 --------------
+killall screen
+killall bot
 cd energy && chmod +x autoenergy.sh && screen ./autoenergy.sh
 
 *****************

@@ -117,12 +117,13 @@ lock = [[
 【✓】lock inline
 【✘】unlock inline
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+📮 با قفل کردن طبق دستورات بالا از ارسال مورد مدنظرتون جلوگیری میکنید.
 🔖powered by: *@mafia_boy*)]]
 
 elseif lang then
 
 lock = [[
-◾️راهنما قفل🔛lock help◾️
+◾️راهنما قفل🔛lock help!◾️
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
 【✓】قفل لینک 
 【✘】باز کردن لینک
@@ -142,7 +143,7 @@ lock = [[
 【✓】قفل فحش
 【✘】باز کردن فحش
 【✓】lock fosh
-【✘】unlock fosh
+【✘】 unlock fosh
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
 【✓】قفل فارسی
 【✘】باز کردن فارسی
@@ -234,6 +235,7 @@ lock = [[
 【✓】lock inline
 【✘】unlock inline
 ﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄﹃﹄
+📮 با قفل کردن طبق دستورات بالا از ارسال مورد مدنظرتون جلوگیری میکنید.
 🔖powered by: *@mafia_boy*)]]
 end
 return lock

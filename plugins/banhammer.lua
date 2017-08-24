@@ -1,6 +1,3 @@
------my_name_is_ehsan*#@mafia_boy
------@ENERGY_TEAM     FOR UPDATE
------لطفا پیام بالا رو پاک نکنید
 local function pre_process(msg)
 chat = msg.chat_id_
 user = msg.sender_user_id_
@@ -816,13 +813,13 @@ data[tostring(chat)]['is_silent_users'][tostring(matches[2])] = nil
           end
 			end
      end
-if matches[1] == "glistbans" and is_admin(msg) then
+if matches[1] == "gbanlist" and is_admin(msg) then
   return gbanned_list(msg)
  end
-if matches[1] == "listsilent" and is_mod(msg) then
+if matches[1] == "silentlist" and is_mod(msg) then
   return silent_users_list(chat)
  end
-if matches[1] == "listbans" and is_mod(msg) then
+if matches[1] == "banlist" and is_mod(msg) then
   return banned_list(chat)
  end
 end
@@ -832,12 +829,12 @@ return {
 		"^[!/#](banall) (.*)$",
 		"^[!/#](unbanall)$",
 		"^[!/#](unbanall) (.*)$",
-		"^[!/#](glistbans)$",
+		"^[!/#](gbanlist)$",
 		"^[!/#](ban)$",
 		"^[!/#](ban) (.*)$",
 		"^[!/#](unban)$",
 		"^[!/#](unban) (.*)$",
-		"^[!/#](listbans)$",
+		"^[!/#](banlist)$",
 		"^[!/#](silent)$",
 		"^[!/#](silent) (.*)$",
 		"^[!/#](unsilent)$",
@@ -852,9 +849,3 @@ return {
 	run = run,
 pre_process = pre_process
 }
-
--- کد های پایین در ربات نشان داده نمیشوند
--- http://bom_bang_team
------my_name_is_ehsan*#@mafia_boy
------@ENERGY_TEAM     FOR UPDATE
------لطفا پیام بالا رو پاک نکنید

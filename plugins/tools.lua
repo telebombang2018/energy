@@ -101,7 +101,7 @@ local sudo_users = _config.sudo_users
   if not lang then
  text = '*List of bot admins :*\n'
    else
- text = "_لیست ادمین های ربات :_\n"
+ text = "_لیست دستیار سودو های ربات :_\n"
   end
 		  	local compare = text
 		  	local i = 1
@@ -113,7 +113,7 @@ local sudo_users = _config.sudo_users
    if not lang then
 		  		text = '_No_ *admins* _available_'
       else
-		  		text = '_ادمینی برای ربات تعیین نشده_'
+		  		text = '_دستیار سودوی برای ربات تعیین نشده_'
            end
 		  	end
 		  	return text
@@ -187,7 +187,7 @@ if is_admin1(tonumber(data.id_)) then
    if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, "_User_ "..user_name.." *"..data.id_.."* _is already an_ *admin*", 0, "md")
   else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_کاربر_ "..user_name.." *"..data.id_.."* _از قبل ادمین ربات بود_", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_کاربر_ "..user_name.." *"..data.id_.."* _از قبل دستیار سودو ربات بود_", 0, "md")
       end
    end
 	    table.insert(_config.admins, {tonumber(data.id_), user_name})
@@ -195,7 +195,7 @@ if is_admin1(tonumber(data.id_)) then
      if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, "_User_ "..user_name.." *"..data.id_.."* _has been promoted as_ *admin*", 0, "md")
     else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_کاربر_ "..user_name.." *"..data.id_.."* _به مقام ادمین ربات منتصب شد_", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_کاربر_ "..user_name.." *"..data.id_.."* _به مقام دستیار سودو ربات منتصب شد_", 0, "md")
    end
 end
 tdcli_function ({
@@ -754,7 +754,7 @@ tdcli_function ({
     }, action_by_username, {chat_id=msg.to.id,username=matches[2],cmd="adminprom"})
       end
    end
-if ((matches[1]:lower() == "admindem" or matches[1] == 'حذف ادمین' and is_mod(msg))) and is_sudo(msg) then
+if ((matches[1]:lower() == "admindem" or matches[1] == 'حذف دستیار سودو' and is_mod(msg))) and is_sudo(msg) then
 if not matches[2] and msg.reply_id then
     tdcli_function ({
       ID = "GetMessage",
@@ -956,18 +956,18 @@ return adminlist(msg)
      if ((matches[1]:lower() == "leave" or matches[1] == 'خروج' and is_mod(msg))) and is_admin(msg) then
   tdcli.changeChatMemberStatus(msg.to.id, our_id, 'Left', dl_cb, nil)
    end
-     if ((matches[1]:lower() == "autoleave" or matches[1] == 'خروج خودکار' and is_mod(msg))) and is_admin(msg) then
+     if matches[1] == 'autoleave' and is_admin(msg) then
 local hash = 'auto_leave_bot'
 --Enable Auto Leave
-     if ((matches[1]:lower() == "enable" or matches[1] == 'فعال' and is_mod(msg))) then
+     if matches[2] == 'enable' then
     redis:del(hash)
    return 'Auto leave has been enabled'
 --Disable Auto Leave
-     elseif ((matches[1]:lower() == "disable" or matches[1] == 'غیرفعال' and is_mod(msg))) then
+     elseif matches[2] == 'disable' then
     redis:set(hash, true)
    return 'Auto leave has been disabled'
 --Auto Leave Status
-      elseif ((matches[1]:lower() == "status" or matches[1] == 'موقعیت' and is_mod(msg))) then
+      elseif matches[2] == 'status' then
       if not redis:get(hash) then
    return 'Auto leave is enable'
        else
@@ -1038,9 +1038,9 @@ patterns = {
 	"^(سودو) (.*)$",	
 	"^(حذف سودو)$",
 	"^(حذف سودو) (.*)$",	
-	"^(ادمین)$",
-	"^(حذف ادمین)$",
-	"^(حذف ادمین) (.*)$",
+	"^(دستیار سودو)$",
+	"^(حذف دستیار سودو)$",
+	"^(حذف دستیار سودو) (.*)$",
 	"^(ارسال فایل) (.*)$",
 	"^(حذف یوزرنیم ربات) (.*)$",
     "^(تغییر یوزرنیم ربات) (.*)$",
@@ -1051,7 +1051,7 @@ patterns = {
 	"^(خروج)$",
 	"^(خروج) (-%d+)$",	
 	"^(ارسال پلاگین) (.*)$",
-	"^(لیست ادمین)$",
+	"^(لیست دستیار سودو)$",
 	"^(خروج خودکار) (.*)$",
     "^(شارژ) (-%d+) (%d+)$",
     "^(شارژ) (%d+)$",	

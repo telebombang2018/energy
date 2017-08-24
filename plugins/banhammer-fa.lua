@@ -1,6 +1,3 @@
------my_name_is_ehsan*#@mafia_boy
------@ENERGY_TEAM     FOR UPDATE
------لطفا پیام بالا رو پاک نکنید
 local function pre_process(msg)
 chat = msg.chat_id_
 user = msg.sender_user_id_
@@ -549,7 +546,7 @@ tdcli.deleteMessagesFromUser(msg.chat_id_, matches[2], dl_cb, nil)
     }, action_by_username, {chat_id=msg.chat_id_,username=matches[2],cmd="delall"})
          end
       end
- if matches[1] == "مسدود کلی" and is_admin(msg) then
+ if matches[1] == "مسدود کردن از همه گروه ها" and is_admin(msg) then
 if not matches[2] and tonumber(msg.reply_to_message_id_) ~= 0 then
     tdcli_function ({
       ID = "GetMessage",
@@ -588,7 +585,7 @@ kick_user(matches[2], msg.chat_id_)
     }, action_by_username, {chat_id=msg.chat_id_,username=matches[2],cmd="banall"})
       end
    end
- if matches[1] == "رفع مسدود کلی" and is_admin(msg) then
+ if matches[1] == "رفع مسدود کردن از همه گروه ها" and is_admin(msg) then
 if not matches[2] and tonumber(msg.reply_to_message_id_) ~= 0 then
     tdcli_function ({
       ID = "GetMessage",
@@ -816,7 +813,7 @@ data[tostring(chat)]['is_silent_users'][tostring(matches[2])] = nil
           end
 			end
      end
-if matches[1] == "لیست مسدود کلی" and is_admin(msg) then
+if matches[1] == "لیست مسدودین گروه ها" and is_admin(msg) then
   return gbanned_list(msg)
  end
 if matches[1] == "لیست سایلنت" and is_mod(msg) then
@@ -829,16 +826,15 @@ end
 return {
 
 	patterns = {
-		"^(مسدود کلی)$",
-		"^(مسدود کلی) (.*)$",
-		"^(رفع مسدود کلی)$",
-		"^(رفع مسدود کلی) (.*)$",
-		"^(لیست مسدود کلی)$",
+		"^(مسدود کردن همه)$",
+		"^(مسدود کردن همه) (.*)$",
+		"^(رفع مسدود کردن همه)$",
+		"^(رفع مسدود کردن همه) (.*)$",
+		"^(لیست مسدودین گروه ها)$",
 		"^(مسدود)$",
 		"^(مسدود) (.*)$",
 		"^(رفع مسدود)$",
 		"^(رفع مسدود) (.*)$",
-		"^(لیست مسدود)$",
 		"^(لیست مسدود)$",
 		"^(سایلنت)$",
 		"^(سایلنت) (.*)$",
@@ -856,7 +852,7 @@ pre_process = pre_process
 }
 
 -- کد های پایین در ربات نشان داده نمیشوند
--- http://bom_bang_team
------my_name_is_ehsan*#@mafia_boy
------@ENERGY_TEAM     FOR UPDATE
------لطفا پیام بالا رو پاک نکنید
+-- http://permag.ir
+-- @permag_ir
+-- @permag_bots
+-- @permag

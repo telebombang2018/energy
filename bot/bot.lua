@@ -93,6 +93,7 @@ function create_config( )
 		"nerkh",
 		"del",
 		"id",
+		"delall",
 		"core",
 		"Invite",
 		"mute-time",

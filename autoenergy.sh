@@ -1,6 +1,6 @@
 #!/bin/bash
 while true ; do
-  for entr in energy.sh ; do
+  for entr in auto.sh ; do
     entry="${entr/.sh/}"
     tmux kill-session -t $entry
       rm -rf ~/.telegram-cli/data/sticker/*
